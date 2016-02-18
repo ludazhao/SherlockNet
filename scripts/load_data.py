@@ -6,7 +6,7 @@ import pickle
 
 '''
 
-Converts and saves image dataset as numpy arrays.
+Converts and pickles image dataset + metadata.
 
 '''
 

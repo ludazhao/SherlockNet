@@ -1,8 +1,14 @@
 import numpy as np
 import os
-import pickle
 import pandas as pd
 
+'''
+
+Test unpickling.
+
+'''
+
+# TODO: move the following to constants.py
 OUT_PATH = '../data/tagged_images_pickled'
 X_OUTFILE = 'X.npy'
 METADATA_OUTFILE = 'metadata.pickle'
