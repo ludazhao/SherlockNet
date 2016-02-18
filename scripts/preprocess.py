@@ -2,6 +2,13 @@ from PIL import Image
 import numpy as np
 import os
 
+'''
+
+Converts images to their greyscale + cropped versions.
+
+'''
+
+# TODO: move the following to constants.py
 # DATA_DIR = '../data/toy_data_raw'
 # DATA_PATH = '../data/lol'
 # OUT_PATH = '../data/lol_processed'
