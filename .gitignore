@@ -1,6 +1,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+images_postproc_256/
 .tf_envs/*
 data/
