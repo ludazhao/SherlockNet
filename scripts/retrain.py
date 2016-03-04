@@ -71,21 +71,31 @@ from tensorflow.python.client import graph_util
 from tensorflow.python.framework import tensor_shape
 from tensorflow.python.platform import gfile
 
+import copy
+
+from tensorflow.core.framework import attr_value_pb2
+from tensorflow.core.framework import graph_pb2
+from tensorflow.python.framework import device as pydev
+from tensorflow.python.framework import dtypes
+from tensorflow.python.framework import ops
+from tensorflow.python.framework import tensor_util
+from tensorflow.python.platform import logging
+
 
 FLAGS = tf.app.flags.FLAGS
 
 # Input and output file flags.
 tf.app.flags.DEFINE_string('image_dir', '',
                            """Path to folders of labeled images.""")
-tf.app.flags.DEFINE_string('output_graph', '/tmp/output_graph.pb',
+tf.app.flags.DEFINE_string('output_graph', '/tmp/output_graph',
                            """Where to save the trained graph.""")
-tf.app.flags.DEFINE_string('output_labels', '/tmp/output_labels.txt',
+tf.app.flags.DEFINE_string('output_labels', '/tmp/output_labels',
                            """Where to save the trained graph's labels.""")
 
 # Details of the training configuration.
-tf.app.flags.DEFINE_integer('how_many_training_steps', 2000,
+tf.app.flags.DEFINE_integer('how_many_training_steps', 1000,
                             """How many training steps to run before ending.""")
-tf.app.flags.DEFINE_float('learning_rate', 0.005,
+tf.app.flags.DEFINE_float('learning_rate', 0.004,
                           """How large a learning rate to use when training.""")
 tf.app.flags.DEFINE_integer(
     'testing_percentage', 10,
@@ -95,6 +105,8 @@ tf.app.flags.DEFINE_integer(
     """What percentage of images to use as a validation set.""")
 tf.app.flags.DEFINE_integer('eval_step_interval', 10,
                             """How often to evaluate the training results.""")
+tf.app.flags.DEFINE_integer('model_save_interval', 100,
+                            """How often to test and save the model.""")
 tf.app.flags.DEFINE_integer('train_batch_size', 50,
                             """How many images to train on at a time.""")
 tf.app.flags.DEFINE_integer('test_batch_size', 500,
@@ -102,7 +114,7 @@ tf.app.flags.DEFINE_integer('test_batch_size', 500,
                             """ test set is only used infrequently to verify"""
                             """ the overall accuracy of the model.""")
 tf.app.flags.DEFINE_integer(
-    'validation_batch_size', 100,
+    'validation_batch_size', 50,
     """How many images to use in an evaluation batch. This validation set is"""
     """ used much more often than the test set, and is an early indicator of"""
     """ how accurate the model is during training.""")
@@ -145,8 +157,8 @@ DATA_URL = 'http://download.tensorflow.org/models/image/imagenet/inception-2015-
 # pylint: enable=line-too-long
 BOTTLENECK_TENSOR_NAME = 'pool_3/_reshape'
 BOTTLENECK_TENSOR_SIZE = 2048
-MODEL_INPUT_WIDTH = 224
-MODEL_INPUT_HEIGHT = 224
+MODEL_INPUT_WIDTH = 299
+MODEL_INPUT_HEIGHT = 299
 MODEL_INPUT_DEPTH = 3
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents'
 RESIZED_INPUT_TENSOR_NAME = 'ResizeBilinear'
@@ -528,6 +540,9 @@ def get_random_distorted_bottlenecks(
     # might be optimized in other implementations.
     distorted_image_data = sess.run(distorted_image,
                                     {input_jpeg_tensor: jpeg_data})
+    #print distorted_image_data.shape
+    distorted_image_data = np.tile(distorted_image_data, (3)) #FOR GREYSCALE, NEED TO EXPAND TO DEPTH 3
+    #print distorted_image_data.shape
     bottleneck = run_bottleneck_on_image(sess, distorted_image_data,
                                          RESIZED_INPUT_TENSOR_NAME)
     ground_truth = np.zeros(class_count, dtype=np.float32)
@@ -630,10 +645,9 @@ def add_input_distortions(flip_left_right, random_crop, random_scale,
   precropped_image = tf.image.resize_bilinear(decoded_image_4d,
                                               precrop_shape_as_int)
   precropped_image_3d = tf.squeeze(precropped_image, squeeze_dims=[0])
-  #cropped_image = tf.random_crop(precropped_image_3d,
-  #                               [MODEL_INPUT_HEIGHT, MODEL_INPUT_WIDTH,
-  #                                MODEL_INPUT_DEPTH])
-  cropped_image = precropped_image_3d
+  cropped_image = tf.random_crop(precropped_image_3d,
+                                 [MODEL_INPUT_HEIGHT, MODEL_INPUT_WIDTH,
+                                  1])
   if flip_left_right:
     flipped_image = tf.image.random_flip_left_right(cropped_image)
   else:
@@ -670,22 +684,23 @@ def add_final_training_ops(graph, class_count, final_tensor_name,
     Nothing.
   """
   bottleneck_tensor = graph.get_tensor_by_name(ensure_name_has_port(
-      BOTTLENECK_TENSOR_NAME))
+	  BOTTLENECK_TENSOR_NAME))
   layer_weights = tf.Variable(
-      tf.truncated_normal([BOTTLENECK_TENSOR_SIZE, class_count], stddev=0.001),
-      name='final_weights')
+	  tf.truncated_normal([BOTTLENECK_TENSOR_SIZE, class_count], stddev=0.001),
+	  name='final_weights')
   layer_biases = tf.Variable(tf.zeros([class_count]), name='final_biases')
-  logits = tf.matmul(bottleneck_tensor, layer_weights,
-                     name='final_matmul') + layer_biases
-  tf.nn.softmax(logits, name=final_tensor_name)
+  logits = tf.matmul(bottleneck_tensor, layer_weights) + layer_biases
+  a = tf.nn.softmax(logits, name=final_tensor_name)  
+  print(final_tensor_name)
+  print(a.name)
   ground_truth_placeholder = tf.placeholder(tf.float32,
-                                            [None, class_count],
-                                            name=ground_truth_tensor_name)
+											[None, class_count],
+											name=ground_truth_tensor_name)
   cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
-      logits, ground_truth_placeholder)
+	  logits, ground_truth_placeholder)
   cross_entropy_mean = tf.reduce_mean(cross_entropy)
   train_step = tf.train.GradientDescentOptimizer(FLAGS.learning_rate).minimize(
-      cross_entropy_mean)
+	  cross_entropy_mean)
   return train_step, cross_entropy_mean
 
 
@@ -710,6 +725,111 @@ def add_evaluation_step(graph, final_tensor_name, ground_truth_tensor_name):
   evaluation_step = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
   return evaluation_step
 
+
+###BELOW IS COPIED FROM GRAPH UTIL FROM TENSORFLOW. HACKY NEED TO FIX ###
+
+def _node_name(n):
+  if n.startswith("^"):
+    return n[1:]
+  else:
+    return n.split(":")[0]
+
+def extract_sub_graph(graph_def, dest_nodes):
+  """Extract the subgraph that can reach any of the nodes in 'dest_nodes'.
+  Args:
+    graph_def: A graph_pb2.GraphDef proto.
+    dest_nodes: A list of strings specifying the destination node names.
+  Returns:
+    The GraphDef of the sub-graph.
+  Raises:
+    TypeError: If 'graph_def' is not a graph_pb2.GraphDef proto.
+  """
+
+  if not isinstance(graph_def, graph_pb2.GraphDef):
+    raise TypeError("graph_def must be a graph_pb2.GraphDef proto.")
+
+  edges = {}  # Keyed by the dest node name.
+  name_to_node_map = {}  # Keyed by node name.
+
+  # Keeps track of node sequences. It is important to still output the
+  # operations in the original order.
+  node_seq = {}  # Keyed by node name.
+  seq = 0
+  for node in graph_def.node:
+    n = _node_name(node.name)
+    name_to_node_map[n] = node
+    edges[n] = [_node_name(x) for x in node.input]
+    node_seq[n] = seq
+    seq += 1
+
+  for d in dest_nodes:
+    assert d in name_to_node_map, "%s is not in graph" % d
+
+  nodes_to_keep = set()
+  # Breadth first search to find all the nodes that we should keep.
+  next_to_visit = dest_nodes[:]
+  while next_to_visit:
+    n = next_to_visit[0]
+    del next_to_visit[0]
+    if n in nodes_to_keep:
+      # Already visited this node.
+      continue
+    nodes_to_keep.add(n)
+    next_to_visit += edges[n]
+
+  nodes_to_keep_list = sorted(list(nodes_to_keep), key=lambda n: node_seq[n])
+  # Now construct the output GraphDef
+  out = graph_pb2.GraphDef()
+  for n in nodes_to_keep_list:
+    out.node.extend([copy.deepcopy(name_to_node_map[n])])
+
+  return out
+
+def convert_variables_to_constants(sess, input_graph_def, output_node_names):
+  """Replaces all the variables in a graph with constants of the same values.
+  If you have a trained graph containing Variable ops, it can be convenient to
+  convert them all to Const ops holding the same values. This makes it possible
+  to describe the network fully with a single GraphDef file, and allows the
+  removal of a lot of ops related to loading and saving the variables.
+  Args:
+    sess: Active TensorFlow session containing the variables.
+    input_graph_def: GraphDef object holding the network.
+    output_node_names: List of name strings for the result nodes of the graph.
+  Returns:
+    GraphDef containing a simplified version of the original.
+  """
+  found_variables = {}
+  for node in input_graph_def.node:
+    if node.op == "Assign":
+      variable_name = node.input[0]
+      found_variables[variable_name] = sess.run(variable_name + ":0")
+
+  # This graph only includes the nodes needed to evaluate the output nodes, and
+  # removes unneeded nodes like those involved in saving and assignment.
+  inference_graph = extract_sub_graph(input_graph_def, output_node_names)
+
+  output_graph_def = graph_pb2.GraphDef()
+  how_many_converted = 0
+  for input_node in inference_graph.node:
+    output_node = graph_pb2.NodeDef()
+    if input_node.name in found_variables:
+      output_node.op = "Const"
+      output_node.name = input_node.name
+      dtype = input_node.attr["dtype"]
+      data = found_variables[input_node.name]
+      output_node.attr["dtype"].CopyFrom(dtype)
+      output_node.attr["value"].CopyFrom(attr_value_pb2.AttrValue(
+          tensor=tensor_util.make_tensor_proto(data,
+                                               dtype=dtype.type,
+                                               shape=data.shape)))
+      how_many_converted += 1
+    else:
+      output_node.CopyFrom(input_node)
+    output_graph_def.node.extend([output_node])
+  print("Converted %d variables to const ops." % how_many_converted)
+  return output_graph_def
+
+### END COPY FROM GRAPHUTIL FROM TENSORFLOW. END HACKINESS ###
 
 def main(_):
   # Set up the pre-trained graph.
@@ -752,13 +872,13 @@ def main(_):
       graph, len(image_lists.keys()), FLAGS.final_tensor_name,
       ground_truth_tensor_name)
 
-  # Set up all our weights to their initial default values.
-  init = tf.initialize_all_variables()
-  sess.run(init)
-
   # Create the operations we need to evaluate the accuracy of our new layer.
   evaluation_step = add_evaluation_step(graph, FLAGS.final_tensor_name,
                                         ground_truth_tensor_name)
+
+  # Set up all our weights to their initial default values.
+  init = tf.initialize_all_variables()
+  sess.run(init)
 
   # Get some layers we'll need to access during training.
   bottleneck_tensor = graph.get_tensor_by_name(ensure_name_has_port(
@@ -806,6 +926,25 @@ def main(_):
       print('%s: Step %d: Validation accuracy = %.1f%%' %
             (datetime.now(), i, validation_accuracy * 100))
 
+    ## Luda: We will save the model at some interval
+    if (i % FLAGS.model_save_interval) == 0:
+      print('MODEL CHECKPOINT at %d' % i)
+      test_bottlenecks, test_ground_truth = get_random_cached_bottlenecks(
+          sess, image_lists, FLAGS.test_batch_size, 'testing',
+          FLAGS.bottleneck_dir, FLAGS.image_dir)
+      test_accuracy = sess.run(
+          evaluation_step,
+          feed_dict={bottleneck_tensor: test_bottlenecks,
+                     ground_truth_tensor: test_ground_truth})
+      print('test accuracy = %.1f%%' % (test_accuracy * 100))
+      output_graph_def = convert_variables_to_constants(
+          sess, graph.as_graph_def(), 
+		  [FLAGS.final_tensor_name, 'final_weights', 'final_biases'])
+      output_graph_def = graph.as_graph_def()
+      with gfile.FastGFile(FLAGS.output_graph + str(i) + '.pb', 'wb') as f:
+        f.write(output_graph_def.SerializeToString())
+      with gfile.FastGFile(FLAGS.output_labels + str(i) + '.txt', 'w') as f:
+        f.write('\n'.join(image_lists.keys()) + '\n')
   # We've completed all our training, so run a final test evaluation on
   # some new images we haven't used before.
   test_bottlenecks, test_ground_truth = get_random_cached_bottlenecks(
@@ -818,14 +957,15 @@ def main(_):
   print('Final test accuracy = %.1f%%' % (test_accuracy * 100))
 
   # Write out the trained graph and labels with the weights stored as constants.
-  #output_graph_def = graph_util.convert_variables_to_constants(
-  #    sess, graph.as_graph_def(), [FLAGS.final_tensor_name])
+  output_graph_def = convert_variables_to_constants(
+      sess, graph.as_graph_def(), [FLAGS.final_tensor_name])
   output_graph_def = graph.as_graph_def()
-  with gfile.FastGFile(FLAGS.output_graph, 'wb') as f:
+  with gfile.FastGFile(FLAGS.output_graph + "final.pb", 'wb') as f:
     f.write(output_graph_def.SerializeToString())
-  with gfile.FastGFile(FLAGS.output_labels, 'w') as f:
+  with gfile.FastGFile(FLAGS.output_labels + "final.txt", 'w') as f:
     f.write('\n'.join(image_lists.keys()) + '\n')
 
 
 if __name__ == '__main__':
   tf.app.run()
+

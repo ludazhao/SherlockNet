@@ -4,4 +4,6 @@ __pycache__/
 images_postproc_256/
 .tf_envs/*
 data/
+.env/*
+tensorflow/*
 !data/*.pkl
