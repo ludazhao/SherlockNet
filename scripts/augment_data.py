@@ -16,9 +16,10 @@ subdirs = ['Animals', 'Architecture', 'Decorations', 'Diagrams', 'Landscape', 'M
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print 'Please pass in root of folder subtree containing tagged images\n'
+        print 'Please pass in root of folder subtree containing tagged images'
         print 'Usage example: python augment_data.py ../data/reorg3_img_aug'
-    parent_dir = sys.arv[1]
+        sys.exit(0)
+    parent_dir = sys.argv[1]
 
     flip_left_right = False
     if random.random() < FLIP_PROB:
