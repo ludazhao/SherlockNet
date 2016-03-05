@@ -97,7 +97,7 @@ tf.app.flags.DEFINE_string('output_params', '/tmp/output_params',
 # Details of the training configuration.
 tf.app.flags.DEFINE_integer('how_many_training_steps', 1000,
                             """How many training steps to run before ending.""")
-tf.app.flags.DEFINE_float('learning_rate', 0.004,
+tf.app.flags.DEFINE_float('learning_rate', 0.002,
                           """How large a learning rate to use when training.""")
 tf.app.flags.DEFINE_integer(
     'testing_percentage', 10,
@@ -692,7 +692,7 @@ def add_final_training_ops(graph, class_count, final_tensor_name,
       name='final_weights')
   layer_biases = tf.Variable(tf.zeros([class_count]), name='final_biases')
   logits = tf.matmul(bottleneck_tensor, layer_weights) + layer_biases
-  a = tf.nn.softmax(logits, name=final_tensor_name)  
+  a = tf.nn.softmax(logits, name=final_tensor_name)
   print(final_tensor_name)
   print(a.name)
   ground_truth_placeholder = tf.placeholder(tf.float32,
@@ -842,7 +842,7 @@ def save_final_weights(sess, vars, ofn):
     for var in vars:
         params[var] = np.array(sess.run(var + ":0"))
     pickle.dump(params, open(ofn, 'w'))
-        
+
 ### END HACKINESS ###
 
 def main(_):
@@ -872,7 +872,7 @@ def main(_):
   sess = tf.Session()
 
   if do_distort_images:
-    # We will be applying distortions, so set upthe operations we'll need.
+    # We will be applying distortions, so set up the operations we'll need.
     add_input_distortions(FLAGS.flip_left_right, FLAGS.random_crop,
                           FLAGS.random_scale, FLAGS.random_brightness,
                           distorted_jpeg_data_tensor_name, distorted_image_name)
@@ -953,7 +953,7 @@ def main(_):
                      ground_truth_tensor: test_ground_truth})
       print('test accuracy = %.1f%%' % (test_accuracy * 100))
       # output_graph_def = convert_variables_to_constants(
-          # sess, graph.as_graph_def(), 
+          # sess, graph.as_graph_def(),
           # [FLAGS.final_tensor_name, 'final_weights', 'final_biases'])
       # output_graph_def = graph.as_graph_def()
       # with gfile.FastGFile(FLAGS.output_graph + str(i) + '.pb', 'wb') as f:
@@ -961,7 +961,7 @@ def main(_):
       save_final_weights(sess, ['final_weights', 'final_biases'], FLAGS.output_params + str(i) + '.pkl')
       with gfile.FastGFile(FLAGS.output_labels + str(i) + '.txt', 'w') as f:
         f.write('\n'.join(image_lists.keys()) + '\n')
-        
+
   # We've completed all our training, so run a final test evaluation on
   # some new images we haven't used before.
   test_bottlenecks, test_ground_truth = get_random_cached_bottlenecks(

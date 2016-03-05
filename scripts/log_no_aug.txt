@@ -1,0 +1,371 @@
+Looking for images in 'reorg3'
+No files found
+Looking for images in 'Landscape'
+Looking for images in 'Miniatures'
+Looking for images in 'People'
+Looking for images in 'Architecture'
+Looking for images in 'Maps'
+Looking for images in 'Nature'
+Looking for images in 'Text'
+Looking for images in 'Animals'
+Looking for images in 'Diagrams'
+Looking for images in 'Decorations'
+Looking for images in 'Objects'
+Looking for images in 'Seals'
+100 bottleneck files created.
+200 bottleneck files created.
+300 bottleneck files created.
+400 bottleneck files created.
+500 bottleneck files created.
+600 bottleneck files created.
+700 bottleneck files created.
+800 bottleneck files created.
+900 bottleneck files created.
+1000 bottleneck files created.
+1100 bottleneck files created.
+1200 bottleneck files created.
+1300 bottleneck files created.
+1400 bottleneck files created.
+final_result
+final_result:0
+2016-03-05 20:54:45.360095: Step 0: Train accuracy = 40.0%
+2016-03-05 20:54:45.360184: Step 0: Cross entropy = 2.456818
+2016-03-05 20:54:45.404772: Step 0: Validation accuracy = 26.0%
+MODEL CHECKPOINT at 0
+test accuracy = 15.4%
+2016-03-05 20:54:46.161958: Step 10: Train accuracy = 36.0%
+2016-03-05 20:54:46.162027: Step 10: Cross entropy = 2.417480
+2016-03-05 20:54:46.198126: Step 10: Validation accuracy = 18.0%
+2016-03-05 20:54:46.569490: Step 20: Train accuracy = 42.0%
+2016-03-05 20:54:46.569556: Step 20: Cross entropy = 2.397479
+2016-03-05 20:54:46.605423: Step 20: Validation accuracy = 32.0%
+2016-03-05 20:54:46.976566: Step 30: Train accuracy = 36.0%
+2016-03-05 20:54:46.976635: Step 30: Cross entropy = 2.350044
+2016-03-05 20:54:47.012617: Step 30: Validation accuracy = 32.0%
+2016-03-05 20:54:47.385969: Step 40: Train accuracy = 32.0%
+2016-03-05 20:54:47.386038: Step 40: Cross entropy = 2.295898
+2016-03-05 20:54:47.421881: Step 40: Validation accuracy = 30.0%
+2016-03-05 20:54:47.792114: Step 50: Train accuracy = 60.0%
+2016-03-05 20:54:47.792182: Step 50: Cross entropy = 2.263688
+2016-03-05 20:54:47.827963: Step 50: Validation accuracy = 48.0%
+2016-03-05 20:54:48.199174: Step 60: Train accuracy = 50.0%
+2016-03-05 20:54:48.199240: Step 60: Cross entropy = 2.234565
+2016-03-05 20:54:48.235078: Step 60: Validation accuracy = 48.0%
+2016-03-05 20:54:48.606638: Step 70: Train accuracy = 66.0%
+2016-03-05 20:54:48.606704: Step 70: Cross entropy = 2.124933
+2016-03-05 20:54:48.642867: Step 70: Validation accuracy = 66.0%
+2016-03-05 20:54:49.024233: Step 80: Train accuracy = 74.0%
+2016-03-05 20:54:49.024300: Step 80: Cross entropy = 2.133855
+2016-03-05 20:54:49.060841: Step 80: Validation accuracy = 66.0%
+2016-03-05 20:54:49.435053: Step 90: Train accuracy = 72.0%
+2016-03-05 20:54:49.435120: Step 90: Cross entropy = 2.128928
+2016-03-05 20:54:49.471167: Step 90: Validation accuracy = 72.0%
+2016-03-05 20:54:49.848552: Step 100: Train accuracy = 54.0%
+2016-03-05 20:54:49.848618: Step 100: Cross entropy = 2.127653
+2016-03-05 20:54:49.885227: Step 100: Validation accuracy = 58.0%
+MODEL CHECKPOINT at 100
+test accuracy = 54.2%
+2016-03-05 20:54:50.663780: Step 110: Train accuracy = 68.0%
+2016-03-05 20:54:50.663851: Step 110: Cross entropy = 2.054856
+2016-03-05 20:54:50.701223: Step 110: Validation accuracy = 70.0%
+2016-03-05 20:54:51.084939: Step 120: Train accuracy = 56.0%
+2016-03-05 20:54:51.085007: Step 120: Cross entropy = 2.080644
+2016-03-05 20:54:51.122265: Step 120: Validation accuracy = 54.0%
+2016-03-05 20:54:51.504841: Step 130: Train accuracy = 64.0%
+2016-03-05 20:54:51.504910: Step 130: Cross entropy = 1.997099
+2016-03-05 20:54:51.542183: Step 130: Validation accuracy = 62.0%
+2016-03-05 20:54:51.923271: Step 140: Train accuracy = 70.0%
+2016-03-05 20:54:51.923338: Step 140: Cross entropy = 2.009739
+2016-03-05 20:54:51.960485: Step 140: Validation accuracy = 74.0%
+2016-03-05 20:54:52.344022: Step 150: Train accuracy = 72.0%
+2016-03-05 20:54:52.344094: Step 150: Cross entropy = 1.901513
+2016-03-05 20:54:52.381182: Step 150: Validation accuracy = 66.0%
+2016-03-05 20:54:52.763454: Step 160: Train accuracy = 68.0%
+2016-03-05 20:54:52.763522: Step 160: Cross entropy = 1.949838
+2016-03-05 20:54:52.800563: Step 160: Validation accuracy = 70.0%
+2016-03-05 20:54:53.182665: Step 170: Train accuracy = 72.0%
+2016-03-05 20:54:53.182733: Step 170: Cross entropy = 1.915328
+2016-03-05 20:54:53.220014: Step 170: Validation accuracy = 56.0%
+2016-03-05 20:54:53.601567: Step 180: Train accuracy = 72.0%
+2016-03-05 20:54:53.601635: Step 180: Cross entropy = 1.901839
+2016-03-05 20:54:53.638803: Step 180: Validation accuracy = 70.0%
+2016-03-05 20:54:54.020702: Step 190: Train accuracy = 78.0%
+2016-03-05 20:54:54.020771: Step 190: Cross entropy = 1.772671
+2016-03-05 20:54:54.058158: Step 190: Validation accuracy = 78.0%
+2016-03-05 20:54:54.440922: Step 200: Train accuracy = 68.0%
+2016-03-05 20:54:54.440990: Step 200: Cross entropy = 1.880658
+2016-03-05 20:54:54.478251: Step 200: Validation accuracy = 64.0%
+MODEL CHECKPOINT at 200
+test accuracy = 71.2%
+2016-03-05 20:54:55.224408: Step 210: Train accuracy = 84.0%
+2016-03-05 20:54:55.224477: Step 210: Cross entropy = 1.740279
+2016-03-05 20:54:55.260809: Step 210: Validation accuracy = 58.0%
+2016-03-05 20:54:55.646973: Step 220: Train accuracy = 84.0%
+2016-03-05 20:54:55.647042: Step 220: Cross entropy = 1.704092
+2016-03-05 20:54:55.683509: Step 220: Validation accuracy = 66.0%
+2016-03-05 20:54:56.062853: Step 230: Train accuracy = 76.0%
+2016-03-05 20:54:56.062922: Step 230: Cross entropy = 1.693460
+2016-03-05 20:54:56.099478: Step 230: Validation accuracy = 58.0%
+2016-03-05 20:54:56.480163: Step 240: Train accuracy = 66.0%
+2016-03-05 20:54:56.480231: Step 240: Cross entropy = 1.823806
+2016-03-05 20:54:56.517604: Step 240: Validation accuracy = 66.0%
+2016-03-05 20:54:56.896620: Step 250: Train accuracy = 76.0%
+2016-03-05 20:54:56.896690: Step 250: Cross entropy = 1.705197
+2016-03-05 20:54:56.933518: Step 250: Validation accuracy = 80.0%
+2016-03-05 20:54:57.313286: Step 260: Train accuracy = 74.0%
+2016-03-05 20:54:57.313354: Step 260: Cross entropy = 1.715155
+2016-03-05 20:54:57.350078: Step 260: Validation accuracy = 76.0%
+2016-03-05 20:54:57.728174: Step 270: Train accuracy = 64.0%
+2016-03-05 20:54:57.728242: Step 270: Cross entropy = 1.703336
+2016-03-05 20:54:57.764910: Step 270: Validation accuracy = 76.0%
+2016-03-05 20:54:58.149944: Step 280: Train accuracy = 56.0%
+2016-03-05 20:54:58.150013: Step 280: Cross entropy = 1.789872
+2016-03-05 20:54:58.186600: Step 280: Validation accuracy = 62.0%
+2016-03-05 20:54:58.565236: Step 290: Train accuracy = 66.0%
+2016-03-05 20:54:58.565305: Step 290: Cross entropy = 1.595280
+2016-03-05 20:54:58.602133: Step 290: Validation accuracy = 66.0%
+2016-03-05 20:54:58.981323: Step 300: Train accuracy = 74.0%
+2016-03-05 20:54:58.981391: Step 300: Cross entropy = 1.591454
+2016-03-05 20:54:59.017895: Step 300: Validation accuracy = 62.0%
+MODEL CHECKPOINT at 300
+test accuracy = 62.8%
+2016-03-05 20:54:59.762346: Step 310: Train accuracy = 78.0%
+2016-03-05 20:54:59.762412: Step 310: Cross entropy = 1.526279
+2016-03-05 20:54:59.799228: Step 310: Validation accuracy = 68.0%
+2016-03-05 20:55:00.177762: Step 320: Train accuracy = 74.0%
+2016-03-05 20:55:00.177830: Step 320: Cross entropy = 1.576266
+2016-03-05 20:55:00.214538: Step 320: Validation accuracy = 74.0%
+2016-03-05 20:55:00.593829: Step 330: Train accuracy = 84.0%
+2016-03-05 20:55:00.593896: Step 330: Cross entropy = 1.531850
+2016-03-05 20:55:00.630589: Step 330: Validation accuracy = 74.0%
+2016-03-05 20:55:01.011006: Step 340: Train accuracy = 84.0%
+2016-03-05 20:55:01.011077: Step 340: Cross entropy = 1.529609
+2016-03-05 20:55:01.047696: Step 340: Validation accuracy = 66.0%
+2016-03-05 20:55:01.425978: Step 350: Train accuracy = 76.0%
+2016-03-05 20:55:01.426045: Step 350: Cross entropy = 1.532113
+2016-03-05 20:55:01.462903: Step 350: Validation accuracy = 72.0%
+2016-03-05 20:55:01.842586: Step 360: Train accuracy = 72.0%
+2016-03-05 20:55:01.842652: Step 360: Cross entropy = 1.494059
+2016-03-05 20:55:01.880507: Step 360: Validation accuracy = 72.0%
+2016-03-05 20:55:02.283368: Step 370: Train accuracy = 66.0%
+2016-03-05 20:55:02.283441: Step 370: Cross entropy = 1.515842
+2016-03-05 20:55:02.320993: Step 370: Validation accuracy = 68.0%
+2016-03-05 20:55:02.705585: Step 380: Train accuracy = 76.0%
+2016-03-05 20:55:02.705664: Step 380: Cross entropy = 1.596623
+2016-03-05 20:55:02.742947: Step 380: Validation accuracy = 76.0%
+2016-03-05 20:55:03.125463: Step 390: Train accuracy = 70.0%
+2016-03-05 20:55:03.125540: Step 390: Cross entropy = 1.537466
+2016-03-05 20:55:03.164137: Step 390: Validation accuracy = 64.0%
+2016-03-05 20:55:03.553643: Step 400: Train accuracy = 64.0%
+2016-03-05 20:55:03.553711: Step 400: Cross entropy = 1.449683
+2016-03-05 20:55:03.590549: Step 400: Validation accuracy = 58.0%
+MODEL CHECKPOINT at 400
+test accuracy = 65.8%
+2016-03-05 20:55:04.337073: Step 410: Train accuracy = 66.0%
+2016-03-05 20:55:04.337142: Step 410: Cross entropy = 1.486525
+2016-03-05 20:55:04.373873: Step 410: Validation accuracy = 68.0%
+2016-03-05 20:55:04.753800: Step 420: Train accuracy = 72.0%
+2016-03-05 20:55:04.753866: Step 420: Cross entropy = 1.430004
+2016-03-05 20:55:04.790591: Step 420: Validation accuracy = 68.0%
+2016-03-05 20:55:05.171005: Step 430: Train accuracy = 76.0%
+2016-03-05 20:55:05.171077: Step 430: Cross entropy = 1.467920
+2016-03-05 20:55:05.208287: Step 430: Validation accuracy = 62.0%
+2016-03-05 20:55:05.589223: Step 440: Train accuracy = 74.0%
+2016-03-05 20:55:05.589293: Step 440: Cross entropy = 1.401060
+2016-03-05 20:55:05.626099: Step 440: Validation accuracy = 72.0%
+2016-03-05 20:55:06.006362: Step 450: Train accuracy = 72.0%
+2016-03-05 20:55:06.006428: Step 450: Cross entropy = 1.396027
+2016-03-05 20:55:06.043169: Step 450: Validation accuracy = 72.0%
+2016-03-05 20:55:06.423339: Step 460: Train accuracy = 80.0%
+2016-03-05 20:55:06.423408: Step 460: Cross entropy = 1.518946
+2016-03-05 20:55:06.460078: Step 460: Validation accuracy = 66.0%
+2016-03-05 20:55:06.840976: Step 470: Train accuracy = 74.0%
+2016-03-05 20:55:06.841047: Step 470: Cross entropy = 1.396350
+2016-03-05 20:55:06.877986: Step 470: Validation accuracy = 80.0%
+2016-03-05 20:55:07.264319: Step 480: Train accuracy = 58.0%
+2016-03-05 20:55:07.264389: Step 480: Cross entropy = 1.596744
+2016-03-05 20:55:07.301354: Step 480: Validation accuracy = 68.0%
+2016-03-05 20:55:07.689822: Step 490: Train accuracy = 70.0%
+2016-03-05 20:55:07.689894: Step 490: Cross entropy = 1.376980
+2016-03-05 20:55:07.726869: Step 490: Validation accuracy = 70.0%
+2016-03-05 20:55:08.113925: Step 500: Train accuracy = 70.0%
+2016-03-05 20:55:08.113993: Step 500: Cross entropy = 1.386501
+2016-03-05 20:55:08.150816: Step 500: Validation accuracy = 82.0%
+MODEL CHECKPOINT at 500
+test accuracy = 65.6%
+2016-03-05 20:55:08.903816: Step 510: Train accuracy = 74.0%
+2016-03-05 20:55:08.903884: Step 510: Cross entropy = 1.504033
+2016-03-05 20:55:08.940830: Step 510: Validation accuracy = 64.0%
+2016-03-05 20:55:09.320094: Step 520: Train accuracy = 70.0%
+2016-03-05 20:55:09.320161: Step 520: Cross entropy = 1.361378
+2016-03-05 20:55:09.356972: Step 520: Validation accuracy = 72.0%
+2016-03-05 20:55:09.736225: Step 530: Train accuracy = 74.0%
+2016-03-05 20:55:09.736291: Step 530: Cross entropy = 1.293944
+2016-03-05 20:55:09.773277: Step 530: Validation accuracy = 74.0%
+2016-03-05 20:55:10.151756: Step 540: Train accuracy = 78.0%
+2016-03-05 20:55:10.151825: Step 540: Cross entropy = 1.249967
+2016-03-05 20:55:10.188408: Step 540: Validation accuracy = 78.0%
+2016-03-05 20:55:10.566952: Step 550: Train accuracy = 78.0%
+2016-03-05 20:55:10.567020: Step 550: Cross entropy = 1.235825
+2016-03-05 20:55:10.603746: Step 550: Validation accuracy = 72.0%
+2016-03-05 20:55:10.981631: Step 560: Train accuracy = 70.0%
+2016-03-05 20:55:10.981697: Step 560: Cross entropy = 1.349024
+2016-03-05 20:55:11.018362: Step 560: Validation accuracy = 64.0%
+2016-03-05 20:55:11.402920: Step 570: Train accuracy = 62.0%
+2016-03-05 20:55:11.402991: Step 570: Cross entropy = 1.332346
+2016-03-05 20:55:11.439825: Step 570: Validation accuracy = 76.0%
+2016-03-05 20:55:11.822721: Step 580: Train accuracy = 70.0%
+2016-03-05 20:55:11.822791: Step 580: Cross entropy = 1.456081
+2016-03-05 20:55:11.859671: Step 580: Validation accuracy = 66.0%
+2016-03-05 20:55:12.241603: Step 590: Train accuracy = 82.0%
+2016-03-05 20:55:12.241670: Step 590: Cross entropy = 1.231537
+2016-03-05 20:55:12.278636: Step 590: Validation accuracy = 58.0%
+2016-03-05 20:55:12.656998: Step 600: Train accuracy = 70.0%
+2016-03-05 20:55:12.657068: Step 600: Cross entropy = 1.367779
+2016-03-05 20:55:12.693877: Step 600: Validation accuracy = 64.0%
+MODEL CHECKPOINT at 600
+test accuracy = 62.2%
+2016-03-05 20:55:13.439170: Step 610: Train accuracy = 72.0%
+2016-03-05 20:55:13.439238: Step 610: Cross entropy = 1.233485
+2016-03-05 20:55:13.476089: Step 610: Validation accuracy = 64.0%
+2016-03-05 20:55:13.856589: Step 620: Train accuracy = 86.0%
+2016-03-05 20:55:13.856657: Step 620: Cross entropy = 1.034994
+2016-03-05 20:55:13.893302: Step 620: Validation accuracy = 76.0%
+2016-03-05 20:55:14.274081: Step 630: Train accuracy = 80.0%
+2016-03-05 20:55:14.274148: Step 630: Cross entropy = 1.254367
+2016-03-05 20:55:14.311347: Step 630: Validation accuracy = 66.0%
+2016-03-05 20:55:14.693197: Step 640: Train accuracy = 84.0%
+2016-03-05 20:55:14.693264: Step 640: Cross entropy = 1.173228
+2016-03-05 20:55:14.729886: Step 640: Validation accuracy = 70.0%
+2016-03-05 20:55:15.110663: Step 650: Train accuracy = 80.0%
+2016-03-05 20:55:15.110733: Step 650: Cross entropy = 1.219215
+2016-03-05 20:55:15.147483: Step 650: Validation accuracy = 70.0%
+2016-03-05 20:55:15.527244: Step 660: Train accuracy = 66.0%
+2016-03-05 20:55:15.527313: Step 660: Cross entropy = 1.293221
+2016-03-05 20:55:15.564110: Step 660: Validation accuracy = 74.0%
+2016-03-05 20:55:15.944329: Step 670: Train accuracy = 74.0%
+2016-03-05 20:55:15.944396: Step 670: Cross entropy = 1.318419
+2016-03-05 20:55:15.981317: Step 670: Validation accuracy = 76.0%
+2016-03-05 20:55:16.361306: Step 680: Train accuracy = 76.0%
+2016-03-05 20:55:16.361378: Step 680: Cross entropy = 1.200539
+2016-03-05 20:55:16.398136: Step 680: Validation accuracy = 82.0%
+2016-03-05 20:55:16.777047: Step 690: Train accuracy = 82.0%
+2016-03-05 20:55:16.777115: Step 690: Cross entropy = 1.106318
+2016-03-05 20:55:16.814092: Step 690: Validation accuracy = 76.0%
+2016-03-05 20:55:17.195782: Step 700: Train accuracy = 84.0%
+2016-03-05 20:55:17.195849: Step 700: Cross entropy = 1.143482
+2016-03-05 20:55:17.232398: Step 700: Validation accuracy = 72.0%
+MODEL CHECKPOINT at 700
+test accuracy = 63.8%
+2016-03-05 20:55:17.978649: Step 710: Train accuracy = 84.0%
+2016-03-05 20:55:17.978716: Step 710: Cross entropy = 1.062364
+2016-03-05 20:55:18.015576: Step 710: Validation accuracy = 62.0%
+2016-03-05 20:55:18.395095: Step 720: Train accuracy = 78.0%
+2016-03-05 20:55:18.395162: Step 720: Cross entropy = 1.231501
+2016-03-05 20:55:18.431881: Step 720: Validation accuracy = 84.0%
+2016-03-05 20:55:18.810780: Step 730: Train accuracy = 70.0%
+2016-03-05 20:55:18.810847: Step 730: Cross entropy = 1.256199
+2016-03-05 20:55:18.847661: Step 730: Validation accuracy = 78.0%
+2016-03-05 20:55:19.228553: Step 740: Train accuracy = 70.0%
+2016-03-05 20:55:19.228621: Step 740: Cross entropy = 1.222424
+2016-03-05 20:55:19.265398: Step 740: Validation accuracy = 72.0%
+2016-03-05 20:55:19.643476: Step 750: Train accuracy = 74.0%
+2016-03-05 20:55:19.643544: Step 750: Cross entropy = 1.266987
+2016-03-05 20:55:19.680541: Step 750: Validation accuracy = 76.0%
+2016-03-05 20:55:20.058050: Step 760: Train accuracy = 90.0%
+2016-03-05 20:55:20.058117: Step 760: Cross entropy = 1.035016
+2016-03-05 20:55:20.094708: Step 760: Validation accuracy = 68.0%
+2016-03-05 20:55:20.473609: Step 770: Train accuracy = 78.0%
+2016-03-05 20:55:20.473678: Step 770: Cross entropy = 1.130117
+2016-03-05 20:55:20.510598: Step 770: Validation accuracy = 82.0%
+2016-03-05 20:55:20.888924: Step 780: Train accuracy = 74.0%
+2016-03-05 20:55:20.888993: Step 780: Cross entropy = 1.112134
+2016-03-05 20:55:20.925484: Step 780: Validation accuracy = 68.0%
+2016-03-05 20:55:21.303436: Step 790: Train accuracy = 74.0%
+2016-03-05 20:55:21.303504: Step 790: Cross entropy = 1.171278
+2016-03-05 20:55:21.340397: Step 790: Validation accuracy = 62.0%
+2016-03-05 20:55:21.718059: Step 800: Train accuracy = 88.0%
+2016-03-05 20:55:21.718129: Step 800: Cross entropy = 1.035005
+2016-03-05 20:55:21.754753: Step 800: Validation accuracy = 70.0%
+MODEL CHECKPOINT at 800
+test accuracy = 66.4%
+2016-03-05 20:55:22.502344: Step 810: Train accuracy = 76.0%
+2016-03-05 20:55:22.502413: Step 810: Cross entropy = 1.222774
+2016-03-05 20:55:22.539575: Step 810: Validation accuracy = 74.0%
+2016-03-05 20:55:22.927188: Step 820: Train accuracy = 78.0%
+2016-03-05 20:55:22.927259: Step 820: Cross entropy = 1.087472
+2016-03-05 20:55:22.964442: Step 820: Validation accuracy = 74.0%
+2016-03-05 20:55:23.346862: Step 830: Train accuracy = 78.0%
+2016-03-05 20:55:23.346930: Step 830: Cross entropy = 1.083269
+2016-03-05 20:55:23.383626: Step 830: Validation accuracy = 64.0%
+2016-03-05 20:55:23.764243: Step 840: Train accuracy = 82.0%
+2016-03-05 20:55:23.764310: Step 840: Cross entropy = 1.109956
+2016-03-05 20:55:23.800896: Step 840: Validation accuracy = 74.0%
+2016-03-05 20:55:24.180703: Step 850: Train accuracy = 78.0%
+2016-03-05 20:55:24.180770: Step 850: Cross entropy = 1.042287
+2016-03-05 20:55:24.217463: Step 850: Validation accuracy = 68.0%
+2016-03-05 20:55:24.599814: Step 860: Train accuracy = 80.0%
+2016-03-05 20:55:24.599883: Step 860: Cross entropy = 1.082335
+2016-03-05 20:55:24.636779: Step 860: Validation accuracy = 74.0%
+2016-03-05 20:55:25.017180: Step 870: Train accuracy = 76.0%
+2016-03-05 20:55:25.017245: Step 870: Cross entropy = 1.232597
+2016-03-05 20:55:25.053966: Step 870: Validation accuracy = 66.0%
+2016-03-05 20:55:25.436004: Step 880: Train accuracy = 80.0%
+2016-03-05 20:55:25.436074: Step 880: Cross entropy = 1.018273
+2016-03-05 20:55:25.472869: Step 880: Validation accuracy = 72.0%
+2016-03-05 20:55:25.855113: Step 890: Train accuracy = 82.0%
+2016-03-05 20:55:25.855180: Step 890: Cross entropy = 0.998136
+2016-03-05 20:55:25.892163: Step 890: Validation accuracy = 52.0%
+2016-03-05 20:55:26.273348: Step 900: Train accuracy = 64.0%
+2016-03-05 20:55:26.273416: Step 900: Cross entropy = 1.231554
+2016-03-05 20:55:26.310207: Step 900: Validation accuracy = 72.0%
+MODEL CHECKPOINT at 900
+test accuracy = 62.8%
+2016-03-05 20:55:27.058589: Step 910: Train accuracy = 78.0%
+2016-03-05 20:55:27.058659: Step 910: Cross entropy = 1.047198
+2016-03-05 20:55:27.096032: Step 910: Validation accuracy = 66.0%
+2016-03-05 20:55:27.473680: Step 920: Train accuracy = 66.0%
+2016-03-05 20:55:27.473749: Step 920: Cross entropy = 1.326161
+2016-03-05 20:55:27.510627: Step 920: Validation accuracy = 68.0%
+2016-03-05 20:55:27.888630: Step 930: Train accuracy = 70.0%
+2016-03-05 20:55:27.888698: Step 930: Cross entropy = 1.194709
+2016-03-05 20:55:27.925321: Step 930: Validation accuracy = 74.0%
+2016-03-05 20:55:28.302329: Step 940: Train accuracy = 74.0%
+2016-03-05 20:55:28.302395: Step 940: Cross entropy = 1.112748
+2016-03-05 20:55:28.338978: Step 940: Validation accuracy = 66.0%
+2016-03-05 20:55:28.715609: Step 950: Train accuracy = 78.0%
+2016-03-05 20:55:28.715679: Step 950: Cross entropy = 1.051086
+2016-03-05 20:55:28.752222: Step 950: Validation accuracy = 76.0%
+2016-03-05 20:55:29.133345: Step 960: Train accuracy = 74.0%
+2016-03-05 20:55:29.133415: Step 960: Cross entropy = 0.987993
+2016-03-05 20:55:29.170212: Step 960: Validation accuracy = 72.0%
+2016-03-05 20:55:29.548145: Step 970: Train accuracy = 72.0%
+2016-03-05 20:55:29.548212: Step 970: Cross entropy = 1.177267
+2016-03-05 20:55:29.584864: Step 970: Validation accuracy = 76.0%
+2016-03-05 20:55:29.965058: Step 980: Train accuracy = 84.0%
+2016-03-05 20:55:29.965125: Step 980: Cross entropy = 0.935748
+2016-03-05 20:55:30.001729: Step 980: Validation accuracy = 74.0%
+2016-03-05 20:55:30.380530: Step 990: Train accuracy = 76.0%
+2016-03-05 20:55:30.380598: Step 990: Cross entropy = 0.971709
+2016-03-05 20:55:30.417457: Step 990: Validation accuracy = 66.0%
+2016-03-05 20:55:30.758760: Step 999: Train accuracy = 82.0%
+2016-03-05 20:55:30.758830: Step 999: Cross entropy = 1.007921
+2016-03-05 20:55:30.795012: Step 999: Validation accuracy = 64.0%
+Final test accuracy = 68.2%
+[[-0.01205623 -0.01037214  0.00829893 ..., -0.00443477 -0.01060791
+  -0.00701982]
+ [ 0.00728504 -0.00756525 -0.00602389 ..., -0.0126026   0.01030709
+   0.00723843]
+ [-0.0141718   0.0033422  -0.00087214 ..., -0.00284716 -0.01017023
+   0.01161563]
+ ..., 
+ [ 0.00763535  0.00715297 -0.00458735 ..., -0.00207198  0.00022586
+  -0.00094542]
+ [ 0.01217701  0.00455892  0.00901402 ...,  0.0047279  -0.01045821
+  -0.00996523]
+ [ 0.00824642  0.00211437  0.00060641 ...,  0.01173261 -0.00547837
+  -0.00587009]]
+[ -9.37944185e-03   2.46792799e-03   4.60689794e-03   1.18664913e-02
+   7.09769738e-05  -1.16496664e-02  -1.05853053e-03   4.60426370e-03
+   6.77342340e-03   5.38077438e-04  -1.67395617e-03  -7.16646668e-03]
+Converted 2 variables to const ops.
