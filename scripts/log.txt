@@ -1,28 +1,4 @@
-Looking for images in 'reorg3'
-No files found
-Looking for images in 'Landscape'
-Looking for images in 'Miniatures'
-Looking for images in 'People'
-Looking for images in 'Architecture'
-Looking for images in 'Maps'
-Looking for images in 'Nature'
-Looking for images in 'Text'
-Looking for images in 'Animals'
-Looking for images in 'Diagrams'
-Looking for images in 'Decorations'
-Looking for images in 'Objects'
-Looking for images in 'Seals'
-Traceback (most recent call last):
-  File "retrain.py", line 969, in <module>
-    tf.app.run()
-  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tensorflow/python/platform/default/_app.py", line 30, in run
-    sys.exit(main(sys.argv))
-  File "retrain.py", line 877, in main
-    ground_truth_tensor_name)
-  File "retrain.py", line 720, in add_evaluation_step
-    final_tensor_name))
-  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2218, in get_tensor_by_name
-    return self.as_graph_element(name, allow_tensor=True, allow_operation=False)
-  File "/home/ubuntu/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2115, in as_graph_element
-    "graph." % (repr(name), repr(op_name)))
-KeyError: "The name 'final_result:0' refers to a Tensor which does not exist. The operation, 'final_result', does not exist in the graph."
+  File "retrain.py", line 814
+    print input_node
+                   ^
+SyntaxError: invalid syntax

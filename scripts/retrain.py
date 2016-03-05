@@ -62,6 +62,7 @@ import random
 import re
 import sys
 import tarfile
+import cPickle as pickle
 
 import numpy as np
 from six.moves import urllib
@@ -91,7 +92,8 @@ tf.app.flags.DEFINE_string('output_graph', '/tmp/output_graph',
                            """Where to save the trained graph.""")
 tf.app.flags.DEFINE_string('output_labels', '/tmp/output_labels',
                            """Where to save the trained graph's labels.""")
-
+tf.app.flags.DEFINE_string('output_params', '/tmp/output_params',
+                           """Where to save the trained graph's final params.""")
 # Details of the training configuration.
 tf.app.flags.DEFINE_integer('how_many_training_steps', 1000,
                             """How many training steps to run before ending.""")
@@ -684,23 +686,23 @@ def add_final_training_ops(graph, class_count, final_tensor_name,
     Nothing.
   """
   bottleneck_tensor = graph.get_tensor_by_name(ensure_name_has_port(
-	  BOTTLENECK_TENSOR_NAME))
+      BOTTLENECK_TENSOR_NAME))
   layer_weights = tf.Variable(
-	  tf.truncated_normal([BOTTLENECK_TENSOR_SIZE, class_count], stddev=0.001),
-	  name='final_weights')
+      tf.truncated_normal([BOTTLENECK_TENSOR_SIZE, class_count], stddev=0.001),
+      name='final_weights')
   layer_biases = tf.Variable(tf.zeros([class_count]), name='final_biases')
   logits = tf.matmul(bottleneck_tensor, layer_weights) + layer_biases
   a = tf.nn.softmax(logits, name=final_tensor_name)  
   print(final_tensor_name)
   print(a.name)
   ground_truth_placeholder = tf.placeholder(tf.float32,
-											[None, class_count],
-											name=ground_truth_tensor_name)
+                                            [None, class_count],
+                                            name=ground_truth_tensor_name)
   cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
-	  logits, ground_truth_placeholder)
+      logits, ground_truth_placeholder)
   cross_entropy_mean = tf.reduce_mean(cross_entropy)
   train_step = tf.train.GradientDescentOptimizer(FLAGS.learning_rate).minimize(
-	  cross_entropy_mean)
+      cross_entropy_mean)
   return train_step, cross_entropy_mean
 
 
@@ -803,7 +805,7 @@ def convert_variables_to_constants(sess, input_graph_def, output_node_names):
     if node.op == "Assign":
       variable_name = node.input[0]
       found_variables[variable_name] = sess.run(variable_name + ":0")
-
+      print(np.array(found_variables[variable_name]))
   # This graph only includes the nodes needed to evaluate the output nodes, and
   # removes unneeded nodes like those involved in saving and assignment.
   inference_graph = extract_sub_graph(input_graph_def, output_node_names)
@@ -811,8 +813,10 @@ def convert_variables_to_constants(sess, input_graph_def, output_node_names):
   output_graph_def = graph_pb2.GraphDef()
   how_many_converted = 0
   for input_node in inference_graph.node:
+    #print(input_node.name)
     output_node = graph_pb2.NodeDef()
     if input_node.name in found_variables:
+      #print("\tin found_var")
       output_node.op = "Const"
       output_node.name = input_node.name
       dtype = input_node.attr["dtype"]
@@ -829,7 +833,17 @@ def convert_variables_to_constants(sess, input_graph_def, output_node_names):
   print("Converted %d variables to const ops." % how_many_converted)
   return output_graph_def
 
-### END COPY FROM GRAPHUTIL FROM TENSORFLOW. END HACKINESS ###
+### END COPY FROM GRAPHUTIL FROM TENSORFLOW.  ###
+
+
+## Brian - saving whatever variables need to be saved
+def save_final_weights(sess, vars, ofn):
+    params = {}
+    for var in vars:
+        params[var] = np.array(sess.run(var + ":0"))
+    pickle.dump(params, open(ofn, 'w'))
+        
+### END HACKINESS ###
 
 def main(_):
   # Set up the pre-trained graph.
@@ -927,6 +941,7 @@ def main(_):
             (datetime.now(), i, validation_accuracy * 100))
 
     ## Luda: We will save the model at some interval
+    ## Brian: save only the last few weights
     if (i % FLAGS.model_save_interval) == 0:
       print('MODEL CHECKPOINT at %d' % i)
       test_bottlenecks, test_ground_truth = get_random_cached_bottlenecks(
@@ -937,14 +952,16 @@ def main(_):
           feed_dict={bottleneck_tensor: test_bottlenecks,
                      ground_truth_tensor: test_ground_truth})
       print('test accuracy = %.1f%%' % (test_accuracy * 100))
-      output_graph_def = convert_variables_to_constants(
-          sess, graph.as_graph_def(), 
-		  [FLAGS.final_tensor_name, 'final_weights', 'final_biases'])
-      output_graph_def = graph.as_graph_def()
-      with gfile.FastGFile(FLAGS.output_graph + str(i) + '.pb', 'wb') as f:
-        f.write(output_graph_def.SerializeToString())
+      # output_graph_def = convert_variables_to_constants(
+          # sess, graph.as_graph_def(), 
+          # [FLAGS.final_tensor_name, 'final_weights', 'final_biases'])
+      # output_graph_def = graph.as_graph_def()
+      # with gfile.FastGFile(FLAGS.output_graph + str(i) + '.pb', 'wb') as f:
+        # f.write(output_graph_def.SerializeToString())
+      save_final_weights(sess, ['final_weights', 'final_biases'], FLAGS.output_params + str(i) + '.pkl')
       with gfile.FastGFile(FLAGS.output_labels + str(i) + '.txt', 'w') as f:
         f.write('\n'.join(image_lists.keys()) + '\n')
+        
   # We've completed all our training, so run a final test evaluation on
   # some new images we haven't used before.
   test_bottlenecks, test_ground_truth = get_random_cached_bottlenecks(
