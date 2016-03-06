@@ -6,12 +6,12 @@ from image_util import *
 FLIP_PROB = 0.3
 NUM_AUGS_PER = 3
 NUM_EXISTING_AUGS_PER = 0
-RANDOM_CROP = 20
-RANDOM_SCALE = 20
-RANDOM_BRIGHTNESS = 20
+RANDOM_CROP = 25
+RANDOM_SCALE = 25
+RANDOM_BRIGHTNESS = 25
 
 #PARENT_DIR = '../data/reorg3_img_aug'
-subdirs = ['Animals', 'Architecture', 'Decorations', 'Diagrams', 'Landscape', 'Maps', 'Miniatures',
+subdirs = ['Animals', 'Architecture', 'Decorations', 'Diagrams', 'Landscapes', 'Maps', 'Miniatures',
            'Nature', 'Objects', 'People', 'Seals', 'Text']
 
 if __name__ == "__main__":
@@ -21,10 +21,9 @@ if __name__ == "__main__":
         sys.exit(0)
     parent_dir = sys.argv[1]
 
-    flip_left_right = False
-    if random.random() < FLIP_PROB:
-        flip_left_right = True
+    print 'Generating %d augmented images per original...' % NUM_AUGS_PER
     for subdir in subdirs:
+        print 'Augmenting images in %s...' % subdir
         DATA_PATH = os.path.join(parent_dir, subdir)
         for file in os.listdir(DATA_PATH):
             if file.startswith('.') or not file.endswith('.jpg') or '_AUG_' in file:
@@ -33,7 +32,7 @@ if __name__ == "__main__":
             gen_aug_imgs(num_imgs=NUM_AUGS_PER,
                          file_path=file_path,
                          num_existing_augs=NUM_EXISTING_AUGS_PER,
-                         flip_left_right=flip_left_right,
+                         flip_prob=FLIP_PROB,
                          random_crop=RANDOM_CROP,
                          random_scale=RANDOM_SCALE,
                          random_brightness=RANDOM_BRIGHTNESS,

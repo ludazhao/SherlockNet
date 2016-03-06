@@ -725,7 +725,7 @@ def add_evaluation_step(graph, final_tensor_name, ground_truth_tensor_name):
   correct_prediction = tf.equal(
       tf.argmax(result_tensor, 1), tf.argmax(ground_truth_tensor, 1))
   evaluation_step = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
-  return evaluation_step
+  return evaluation_step, result_tensor, ground_truth_tensor
 
 
 ###BELOW IS COPIED FROM GRAPH UTIL FROM TENSORFLOW. HACKY NEED TO FIX ###
@@ -972,6 +972,10 @@ def main(_):
       feed_dict={bottleneck_tensor: test_bottlenecks,
                  ground_truth_tensor: test_ground_truth})
   print('Final test accuracy = %.1f%%' % (test_accuracy * 100))
+
+  #Run prediction in the end to output image_to_tags
+  if FLAGS.run_predict:
+
 
   # Write out the trained graph and labels with the weights stored as constants.
   output_graph_def = convert_variables_to_constants(

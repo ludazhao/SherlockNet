@@ -1,0 +1,4 @@
+  File "retrain.py", line 981
+    output_graph_def = convert_variables_to_constants(
+                   ^
+IndentationError: expected an indented block

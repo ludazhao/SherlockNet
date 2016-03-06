@@ -11,11 +11,10 @@ Pillow image library instead of tensorflow.
 
 #Generate a number of different augmented images(flipped, cropped, scaled) at the same directory as the original image
 
-def gen_aug_imgs(num_imgs, file_path, num_existing_augs=0, flip_left_right=False, random_crop=0, random_scale=0, random_brightness=0, verbose=False):
+def gen_aug_imgs(num_imgs, file_path, num_existing_augs=0, flip_prob=0.0, random_crop=0, random_scale=0, random_brightness=0, verbose=False):
     im = Image.open(file_path, 'r')
     width, height = im.size
-    if verbose:
-        print 'random_crop=%s, random_scale=%s, random_brightness=%s' % (random_crop, random_scale, random_brightness)
+    #print 'random_crop=%s, random_scale=%s, random_brightness=%s' % (random_crop, random_scale, random_brightness)
     for i in xrange(num_existing_augs, num_existing_augs + num_imgs):
         margin_scale = 1.0 + (random_crop / 100.0)
         resize_scale = 1.0 + (random_scale / 100.0)
@@ -32,6 +31,11 @@ def gen_aug_imgs(num_imgs, file_path, num_existing_augs=0, flip_left_right=False
         bounding_box = get_rand_bounding_box(precrop_width, precrop_height, width, height)
         #print bounding_box
         cropped_im = precrop_im.crop(bounding_box)
+
+        flip_left_right = False
+        if random.random() < flip_prob:
+            flip_left_right = True
+
         if flip_left_right:
             flipped_im = cropped_im.transpose(Image.FLIP_LEFT_RIGHT)
         else:
