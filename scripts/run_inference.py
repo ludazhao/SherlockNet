@@ -34,7 +34,7 @@ def softmax(x):
         return e / np.sum(e, axis=0)
     else:  
         return e / np.array([np.sum(e, axis=1)]).T  # ndim = 2
-		
+        
 def run_inference_on_image(image, fileType, fw, fb, sess, visualize=True, verbose=True):
     # Some useful tensors:
     # 'softmax:0': A tensor containing the normalized prediction across
@@ -74,7 +74,7 @@ def run_inference_on_image(image, fileType, fw, fb, sess, visualize=True, verbos
 
     return preds
 
-	
+    
 def predict(img, params):
     num = params["image_to_idx"][img]
     chunk_num = "Chunk" + str(num / 5000)
@@ -88,4 +88,12 @@ def predict(img, params):
     params["images_to_scores"][img] = preds
 
 def predict_star(tup):
+    print tup[0]
     return predict(*tup)
+
+
+def f(x,y):
+    return x*y
+    
+def f_star(args):
+    return f(*args)

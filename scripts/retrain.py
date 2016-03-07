@@ -88,16 +88,16 @@ FLAGS = tf.app.flags.FLAGS
 # Input and output file flags.
 tf.app.flags.DEFINE_string('image_dir', '',
                            """Path to folders of labeled images.""")
-tf.app.flags.DEFINE_string('output_graph', '/tmp/output_graph',
+tf.app.flags.DEFINE_string('output_graph', '/data/output_graph',
                            """Where to save the trained graph.""")
-tf.app.flags.DEFINE_string('output_labels', '/tmp/output_labels',
+tf.app.flags.DEFINE_string('output_labels', '/data/output_labels',
                            """Where to save the trained graph's labels.""")
-tf.app.flags.DEFINE_string('output_params', '/tmp/output_params',
+tf.app.flags.DEFINE_string('output_params', '/data/output_params',
                            """Where to save the trained graph's final params.""")
 # Details of the training configuration.
-tf.app.flags.DEFINE_integer('how_many_training_steps', 1000,
+tf.app.flags.DEFINE_integer('how_many_training_steps', 10000,
                             """How many training steps to run before ending.""")
-tf.app.flags.DEFINE_float('learning_rate', 0.002,
+tf.app.flags.DEFINE_float('learning_rate', 0.005,
                           """How large a learning rate to use when training.""")
 tf.app.flags.DEFINE_integer(
     'testing_percentage', 10,
@@ -105,29 +105,33 @@ tf.app.flags.DEFINE_integer(
 tf.app.flags.DEFINE_integer(
     'validation_percentage', 10,
     """What percentage of images to use as a validation set.""")
-tf.app.flags.DEFINE_integer('eval_step_interval', 10,
+tf.app.flags.DEFINE_integer('eval_step_interval', 50,
                             """How often to evaluate the training results.""")
-tf.app.flags.DEFINE_integer('model_save_interval', 100,
+tf.app.flags.DEFINE_integer('model_save_interval', 200,
                             """How often to test and save the model.""")
-tf.app.flags.DEFINE_integer('train_batch_size', 50,
+tf.app.flags.DEFINE_integer('train_batch_size', 100,
                             """How many images to train on at a time.""")
-tf.app.flags.DEFINE_integer('test_batch_size', 500,
+tf.app.flags.DEFINE_integer('test_batch_size', 5000,
                             """How many images to test on at a time. This"""
                             """ test set is only used infrequently to verify"""
                             """ the overall accuracy of the model.""")
 tf.app.flags.DEFINE_integer(
-    'validation_batch_size', 50,
+    'validation_batch_size', 100,
     """How many images to use in an evaluation batch. This validation set is"""
     """ used much more often than the test set, and is an early indicator of"""
     """ how accurate the model is during training.""")
 
+tf.app.flags.DEFINE_integer(
+    'topk', 3,
+    "Define Top k predictions in validating accuracy"
+)
 # File-system cache locations.
-tf.app.flags.DEFINE_string('model_dir', '/tmp/imagenet',
+tf.app.flags.DEFINE_string('model_dir', '/data/imagenet',
                            """Path to classify_image_graph_def.pb, """
                            """imagenet_synset_to_human_label_map.txt, and """
                            """imagenet_2012_challenge_label_map_proto.pbtxt.""")
 tf.app.flags.DEFINE_string(
-    'bottleneck_dir', '/tmp/bottleneck',
+    'bottleneck_dir', '/data/bottleneck',
     """Path to cache bottleneck layer values as files.""")
 tf.app.flags.DEFINE_string('final_tensor_name', 'final_result',
                            """The name of the output classification layer in"""
@@ -420,6 +424,7 @@ def get_or_create_bottleneck(sess, image_lists, label_name, index, image_dir,
   with open(bottleneck_path, 'r') as bottleneck_file:
     bottleneck_string = bottleneck_file.read()
   bottleneck_values = [float(x) for x in bottleneck_string.split(',')]
+
   return bottleneck_values
 
 
@@ -701,7 +706,7 @@ def add_final_training_ops(graph, class_count, final_tensor_name,
   cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
       logits, ground_truth_placeholder)
   cross_entropy_mean = tf.reduce_mean(cross_entropy)
-  train_step = tf.train.GradientDescentOptimizer(FLAGS.learning_rate).minimize(
+  train_step = tf.train.AdamOptimizer(FLAGS.learning_rate).minimize(
       cross_entropy_mean)
   return train_step, cross_entropy_mean
 
@@ -725,7 +730,30 @@ def add_evaluation_step(graph, final_tensor_name, ground_truth_tensor_name):
   correct_prediction = tf.equal(
       tf.argmax(result_tensor, 1), tf.argmax(ground_truth_tensor, 1))
   evaluation_step = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
-  return evaluation_step, result_tensor, ground_truth_tensor
+  return evaluation_step
+
+def topk_accuracy(graph, final_tensor_name, ground_truth_tensor_name, k):
+  """Inserts the operations we need to evaluate topk accuracy of our results.
+
+  Args:
+    graph: Container for the existing model's Graph.
+    final_tensor_name: Name string for the new final node that produces results.
+    ground_truth_tensor_name: Name string for the node we feed ground truth data
+    into.
+    k: the top k accuracy we want
+
+  Returns:
+    Nothing.
+  """
+  result_tensor = graph.get_tensor_by_name(ensure_name_has_port(
+      final_tensor_name))
+  ground_truth_tensor = graph.get_tensor_by_name(ensure_name_has_port(
+      ground_truth_tensor_name))
+  correct_prediction = tf.nn.in_top_k(result_tensor, tf.argmax(ground_truth_tensor, 1), k)
+  #correct_prediction = tf.equal(
+      #tf.argmax(result_tensor, 1), tf.argmax(ground_truth_tensor, 1))
+  evaluation_step = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
+  return evaluation_step
 
 
 ###BELOW IS COPIED FROM GRAPH UTIL FROM TENSORFLOW. HACKY NEED TO FIX ###
@@ -889,7 +917,11 @@ def main(_):
   # Create the operations we need to evaluate the accuracy of our new layer.
   evaluation_step = add_evaluation_step(graph, FLAGS.final_tensor_name,
                                         ground_truth_tensor_name)
+  topk_acc3 = topk_accuracy(graph, FLAGS.final_tensor_name,
+                                        ground_truth_tensor_name, 3)
 
+  topk_acc5 = topk_accuracy(graph, FLAGS.final_tensor_name,
+                                        ground_truth_tensor_name, 5)
   # Set up all our weights to their initial default values.
   init = tf.initialize_all_variables()
   sess.run(init)
@@ -899,7 +931,7 @@ def main(_):
       BOTTLENECK_TENSOR_NAME))
   ground_truth_tensor = graph.get_tensor_by_name(ensure_name_has_port(
       ground_truth_tensor_name))
-
+  best_top3_acc = 0
   # Run the training for as many cycles as requested on the command line.
   for i in range(FLAGS.how_many_training_steps):
     # Get a catch of input bottleneck values, either calculated fresh every time
@@ -952,6 +984,16 @@ def main(_):
           feed_dict={bottleneck_tensor: test_bottlenecks,
                      ground_truth_tensor: test_ground_truth})
       print('test accuracy = %.1f%%' % (test_accuracy * 100))
+      topk_res3 = sess.run(
+          topk_acc3,
+          feed_dict={bottleneck_tensor: test_bottlenecks,
+                     ground_truth_tensor: test_ground_truth})
+      print('top %d test accuracy = %.1f%%' % (3, topk_res3 * 100))
+      topk_res5 = sess.run(
+          topk_acc5,
+          feed_dict={bottleneck_tensor: test_bottlenecks,
+                     ground_truth_tensor: test_ground_truth})
+      print('top %d test accuracy = %.1f%%' % (5, topk_res5 * 100))
       # output_graph_def = convert_variables_to_constants(
           # sess, graph.as_graph_def(),
           # [FLAGS.final_tensor_name, 'final_weights', 'final_biases'])
@@ -959,6 +1001,9 @@ def main(_):
       # with gfile.FastGFile(FLAGS.output_graph + str(i) + '.pb', 'wb') as f:
         # f.write(output_graph_def.SerializeToString())
       save_final_weights(sess, ['final_weights', 'final_biases'], FLAGS.output_params + str(i) + '.pkl')
+      if topk_res3 > best_top3_acc:
+        best_top3_acc = topk_res3
+        save_final_weights(sess, ['final_weights', 'final_biases'], FLAGS.output_params + 'best.pkl')
       with gfile.FastGFile(FLAGS.output_labels + str(i) + '.txt', 'w') as f:
         f.write('\n'.join(image_lists.keys()) + '\n')
 
@@ -972,11 +1017,18 @@ def main(_):
       feed_dict={bottleneck_tensor: test_bottlenecks,
                  ground_truth_tensor: test_ground_truth})
   print('Final test accuracy = %.1f%%' % (test_accuracy * 100))
+  topk_res3 = sess.run(
+      topk_acc3,
+      feed_dict={bottleneck_tensor: test_bottlenecks,
+                 ground_truth_tensor: test_ground_truth})
+  print('Final top %d test accuracy = %.1f%%' % (3, topk_res3 * 100))
+  topk_res5 = sess.run(
+      topk_acc5,
+      feed_dict={bottleneck_tensor: test_bottlenecks,
+                 ground_truth_tensor: test_ground_truth})
+  print('Final top %d test accuracy = %.1f%%' % (5, topk_res5 * 100))
 
-  #Run prediction in the end to output image_to_tags
-  if FLAGS.run_predict:
-
-
+  print("Best top 3 accuracy: %.1f%%" % (best_top3_acc*100))
   # Write out the trained graph and labels with the weights stored as constants.
   output_graph_def = convert_variables_to_constants(
       sess, graph.as_graph_def(), [FLAGS.final_tensor_name])
