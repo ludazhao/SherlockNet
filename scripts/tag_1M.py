@@ -64,7 +64,7 @@ def softmax(x):
 if __name__ == "__main__":
 		
 	chk_start = int(sys.argv[1])
-	
+	step = int(sys.argv[2])
 	logfile = open("/data/1M_tags/{}_log.txt".format(chk_start), 'w')
 	
 	
@@ -76,7 +76,8 @@ if __name__ == "__main__":
 	
 	#graph = create_graph"/data/retrain_manualtags/output_graph_best.pb")
 	create_graph("/data/classify_image_graph_def.pb")
-	sess = tf.Session()
+	with tf.device('/cpu:0'):
+		sess = tf.Session()
 
 	params = pickle.load(open("/data/10k_aug_outputs/output_params_lr1e-3_adam9800.pkl", 'r'))
 	fw = params["final_weights"]
@@ -93,21 +94,21 @@ if __name__ == "__main__":
 	(image_metadata, book_metadata, image_to_idx) = pickle.load(open("/data/all_metadata_w11ktags.pkl", 'r'))
 
 	softmax_tensor = sess.graph.get_tensor_by_name('pool_3:0')
-	for chk in range(chk_start, chk_start + 25):
+	for chk in range(chk_start, chk_start + step):
 		chunk = "Chunk" + str(chk)
 		if chunk not in image_hdf5: continue
 		print chunk
 		logfile.write("{}\n".format(chunk))
 		
 		idx_to_arr = {}
-		for i in range(10000):
-			print "\t{}".format(i)
-			logfile.write("\t{}".format(i))
+		for i in range(5000):
+			if i % 100 == 0: 
+				print "\t{}".format(i)
+				logfile.write("\t{}\n".format(i))
 
 			try:
 				a = [to_rgb(image_hdf5["Chunk0"][i][:,:,0])]
-				with tf.device("/cpu:0"):
-					predictions = sess.run(softmax_tensor, {'ExpandDims:0': a})[:,0,0,:]
+				predictions = sess.run(softmax_tensor, {'ExpandDims:0': a})[:,0,0,:]
 				preds = np.dot(predictions, fw) + fb
 				preds = np.array([softmax(preds[i]) for i in range(preds.shape[0])])
 				idx_to_arr[i] = preds
@@ -115,4 +116,4 @@ if __name__ == "__main__":
 			except:
 				continue
 				
-		pickle.dump(idx_to_arr, "/data/1M_tags/{}.pkl".format(chunk))
+		pickle.dump(idx_to_arr, open("/data/1M_tags/{}.pkl".format(chunk), 'w'))
