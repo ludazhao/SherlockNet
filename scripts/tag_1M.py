@@ -100,20 +100,19 @@ if __name__ == "__main__":
 		print chunk
 		logfile.write("{}\n".format(chunk))
 		
-		idx_to_arr = {}
+		idx_to_scores = {}  # scores (12 elements) for each image
 		for i in range(5000):
 			if i % 100 == 0: 
 				print "\t{}".format(i)
 				logfile.write("\t{}\n".format(i))
 
 			try:
-				a = [to_rgb(image_hdf5["Chunk0"][i][:,:,0])]
-				predictions = sess.run(softmax_tensor, {'ExpandDims:0': a})[:,0,0,:]
-				preds = np.dot(predictions, fw) + fb
-				preds = np.array([softmax(preds[j]) for j in range(preds.shape[0])])
-				idx_to_arr[i] = preds
-				f = time.time()
+				a = [to_rgb(image_hdf5[chunk][i][:,:,0])] # (1,224,224,3)
+				preds = sess.run(softmax_tensor, {'ExpandDims:0': a})[:,0,0,:]  # (1,2048)
+				idx_to_scores[i] = np.array(softmax((np.dot(preds, fw) + fb)[0]))  # (,12)
+				#idx_to_scores[i] = preds
+				# f = time.time()
 			except:
 				continue
 				
-		pickle.dump(idx_to_arr, open("/data/1M_tags/{}.pkl".format(chunk), 'w'))
+		pickle.dump(idx_to_scores, open("/data/1M_tags/{}.pkl".format(chunk), 'w'))
