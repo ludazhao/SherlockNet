@@ -77,7 +77,6 @@ import copy
 from tensorflow.core.framework import attr_value_pb2
 from tensorflow.core.framework import graph_pb2
 from tensorflow.python.framework import device as pydev
-from tensorflow.python.framework import dtypes
 from tensorflow.python.framework import ops
 from tensorflow.python.framework import tensor_util
 from tensorflow.python.platform import logging
@@ -88,16 +87,16 @@ FLAGS = tf.app.flags.FLAGS
 # Input and output file flags.
 tf.app.flags.DEFINE_string('image_dir', '',
                            """Path to folders of labeled images.""")
-tf.app.flags.DEFINE_string('output_graph', '/data/output_graph',
+tf.app.flags.DEFINE_string('output_graph', '/data/datenet_output_graph',
                            """Where to save the trained graph.""")
-tf.app.flags.DEFINE_string('output_labels', '/data/output_labels',
+tf.app.flags.DEFINE_string('output_labels', '/data/datenet_output_labels',
                            """Where to save the trained graph's labels.""")
-tf.app.flags.DEFINE_string('output_params', '/data/output_params',
+tf.app.flags.DEFINE_string('output_params', '/data/datenet_output_params',
                            """Where to save the trained graph's final params.""")
 # Details of the training configuration.
 tf.app.flags.DEFINE_integer('how_many_training_steps', 10000,
                             """How many training steps to run before ending.""")
-tf.app.flags.DEFINE_float('learning_rate', 0.005,
+tf.app.flags.DEFINE_float('learning_rate', 0.001,
                           """How large a learning rate to use when training.""")
 tf.app.flags.DEFINE_integer(
     'testing_percentage', 10,
@@ -122,7 +121,7 @@ tf.app.flags.DEFINE_integer(
     """ how accurate the model is during training.""")
 
 tf.app.flags.DEFINE_integer(
-    'topk', 3,
+    'topk', 2,
     "Define Top k predictions in validating accuracy"
 )
 # File-system cache locations.
@@ -131,7 +130,7 @@ tf.app.flags.DEFINE_string('model_dir', '/data/imagenet',
                            """imagenet_synset_to_human_label_map.txt, and """
                            """imagenet_2012_challenge_label_map_proto.pbtxt.""")
 tf.app.flags.DEFINE_string(
-    'bottleneck_dir', '/data/bottleneck',
+    'bottleneck_dir', '/data/datenet_bottleneck',
     """Path to cache bottleneck layer values as files.""")
 tf.app.flags.DEFINE_string('final_tensor_name', 'final_result',
                            """The name of the output classification layer in"""

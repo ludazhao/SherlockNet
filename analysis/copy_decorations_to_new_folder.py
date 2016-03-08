@@ -19,7 +19,9 @@ basedir = "/data/decorations_by_date/"
 
 print "Moving files"
 counter = 0
-for i in range(100):
+for i in range(195):
+	if i == 194: #don't have chunk 194 
+		continue
 	chunk_file = "/data/1M_tags/Chunk{}.pkl".format(i)
 	print chunk_file
 	scores = pickle.load(open(chunk_file, 'r'))
@@ -30,8 +32,23 @@ for i in range(100):
 		if tag == 'decorations':
 			[img, date] = image_metadata[i * 5000 + idx][:2]
 			date = int(date) 
+			if date < 1700:
+				newfolder = "pre-1700"
+			elif date < 1750:
+				newfolder = "1700-1749"
+			elif date < 1800:
+				newfolder = "1750-1799"
+			elif date < 1850:
+				newfolder = "1800-1849"
+			elif date < 1870:
+				newfolder = "1850-1869"
+			elif date < 1890:
+				newfolder = "1870-1889"
+			else:
+				newfolder = "post-1890"
 			
-			newfolder = basedir + str(10 * (date/10))  # HOW GRANULAR??
+			#newfolder = basedir + str(10 * (date/10))  # HOW GRANULAR??
+			newfoldeer = basedir + newfolder
 			if not glob.glob(newfolder): os.mkdir(newfolder)
 			newfn = newfolder + "/" + img + ".jpg"
 
