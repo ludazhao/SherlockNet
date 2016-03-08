@@ -110,7 +110,7 @@ if __name__ == "__main__":
 				a = [to_rgb(image_hdf5["Chunk0"][i][:,:,0])]
 				predictions = sess.run(softmax_tensor, {'ExpandDims:0': a})[:,0,0,:]
 				preds = np.dot(predictions, fw) + fb
-				preds = np.array([softmax(preds[i]) for i in range(preds.shape[0])])
+				preds = np.array([softmax(preds[j]) for j in range(preds.shape[0])])
 				idx_to_arr[i] = preds
 				f = time.time()
 			except:
