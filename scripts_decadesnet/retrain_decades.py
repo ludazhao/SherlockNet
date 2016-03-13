@@ -124,6 +124,10 @@ tf.app.flags.DEFINE_integer(
     'topk', 2,
     "Define Top k predictions in validating accuracy"
 )
+tf.app.flags.DEFINE_integer(
+    'num_test_per_class', 300,
+    "number of testing samples per class"
+)
 # File-system cache locations.
 tf.app.flags.DEFINE_string('model_dir', '/data/imagenet',
                            """Path to classify_image_graph_def.pb, """
@@ -221,7 +225,16 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
     training_images = []
     testing_images = []
     validation_images = []
+
+    test_files = random.sample(file_list, FLAGS.num_test_per_class)
+    print("subdir " + sub_dir + " samples " + str(len(test_files)) + " sampled")
+    for file_name in test_files:
+      base_name = os.path.basename(file_name)
+      print("adding testing image " + file_name + " with label " + label_name)
+      testing_images.append(base_name)
     for file_name in file_list:
+      if file_name in test_files:
+        continue
       base_name = os.path.basename(file_name)
       # We want to ignore anything after '_nohash_' in the file name when
       # deciding which set to put an image in, the data set creator has a way of
@@ -238,10 +251,10 @@ def create_image_lists(image_dir, testing_percentage, validation_percentage):
       # probability value that we use to assign it.
       hash_name_hashed = hashlib.sha1(hash_name.encode('utf-8')).hexdigest()
       percentage_hash = (int(hash_name_hashed, 16) % (65536)) * (100 / 65535.0)
-      if percentage_hash < validation_percentage:
+      if percentage_hash < validation_percentage / (1 - 0.01 * testing_percentage):
         validation_images.append(base_name)
-      elif percentage_hash < (testing_percentage + validation_percentage):
-        testing_images.append(base_name)
+      #elif percentage_hash < (testing_percentage + validation_percentage):
+      #  testing_images.append(base_name)
       else:
         training_images.append(base_name)
     result[label_name] = {
@@ -748,7 +761,7 @@ def topk_accuracy(graph, final_tensor_name, ground_truth_tensor_name, k):
       final_tensor_name))
   ground_truth_tensor = graph.get_tensor_by_name(ensure_name_has_port(
       ground_truth_tensor_name))
-  correct_prediction = tf.nn.in_top_k(result_tensor, tf.argmax(ground_truth_tensor, 1), k)
+  correct_prediction = tf.nn.in_top_k(result_tensor, tf.cast(tf.argmax(ground_truth_tensor, 1), "int32"), k)
   #correct_prediction = tf.equal(
       #tf.argmax(result_tensor, 1), tf.argmax(ground_truth_tensor, 1))
   evaluation_step = tf.reduce_mean(tf.cast(correct_prediction, 'float'))

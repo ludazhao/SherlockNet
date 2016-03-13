@@ -48,7 +48,7 @@ for i in range(195):
 				newfolder = "post-1890"
 			
 			#newfolder = basedir + str(10 * (date/10))  # HOW GRANULAR??
-			newfoldeer = basedir + newfolder
+			newfolder = basedir + newfolder
 			if not glob.glob(newfolder): os.mkdir(newfolder)
 			newfn = newfolder + "/" + img + ".jpg"
 
