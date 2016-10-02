@@ -1,0 +1,89 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/jupyter-notebook", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python2.7/dist-packages/jupyter_core/application.py", line 267, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/config/application.py", line 588, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-7>", line 2, in initialize
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/config/application.py", line 74, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/notebook/notebookapp.py", line 1021, in initialize
+    self.init_configurables()
+  File "/usr/local/lib/python2.7/dist-packages/notebook/notebookapp.py", line 820, in init_configurables
+    log=self.log,
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 910, in __new__
+    inst.setup_instance()
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 934, in setup_instance
+    super(HasTraits, self).setup_instance()
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 925, in setup_instance
+    value.instance_init(self)
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 1563, in instance_init
+    super(Instance, self).instance_init(obj)
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 492, in instance_init
+    if (self._dynamic_default_callable(obj) is None) \
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 483, in _dynamic_default_callable
+    _deprecated_method(method, cls, meth_name, "use @default decorator instead.")
+  File "/usr/local/lib/python2.7/dist-packages/traitlets/traitlets.py", line 109, in _deprecated_method
+    lineno = inspect.getsourcelines(method)[1] or 0
+  File "/usr/lib/python2.7/inspect.py", line 690, in getsourcelines
+    lines, lnum = findsource(object)
+  File "/usr/lib/python2.7/inspect.py", line 534, in findsource
+    lines = linecache.getlines(file, module.__dict__)
+  File "/usr/lib/python2.7/linecache.py", line 40, in getlines
+    return updatecache(filename, module_globals)
+  File "/usr/lib/python2.7/linecache.py", line 133, in updatecache
+    lines = fp.readlines()
+KeyboardInterrupt
+[I 19:10:37.479 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 19:10:37.803 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 19:10:37.803 NotebookApp] 0 active kernels 
+[I 19:10:37.804 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 19:10:37.804 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 19:10:49.994 NotebookApp] Kernel started: 40f5cbee-55eb-4cd0-aaf6-98e99c829f26
+[I 19:11:03.290 NotebookApp] Copying nearest_neighbor_ocr_tagging_test.ipynb to 
+[I 19:11:03.718 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 19:11:06.389 NotebookApp] Kernel started: d7df8b0c-7743-427a-b9fc-ba8bb8a5d60c
+[I 19:13:06.593 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+I tensorflow/core/common_runtime/local_device.cc:25] Local device intra op parallelism threads: 8
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:888] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:88] Found device 0 with properties: 
+name: GRID K520
+major: 3 minor: 0 memoryClockRate (GHz) 0.797
+pciBusID 0000:00:03.0
+Total memory: 4.00GiB
+Free memory: 3.95GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:112] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:122] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:687] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:27] Allocating 3.66GiB bytes.
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:37] GPU 0 memory begins at 0x7023e0000 extends to 0x7ec556000
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 8.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 16.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 32.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 64.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 128.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 256.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 512.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 8.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 16.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 32.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 64.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 128.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 256.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 512.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.00GiB
+I tensorflow/core/common_runtime/direct_session.cc:45] Direct session inter op parallelism threads: 8
+[I 19:15:06.510 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 00:02:01.186 NotebookApp] Creating new notebook in 
+[I 00:02:02.414 NotebookApp] Kernel started: 04be14ea-a73b-48fb-b1e4-2e2bf299d0cc
+[I 00:04:02.496 NotebookApp] Saving file at /fix_datasets.ipynb
+[I 00:08:02.582 NotebookApp] Saving file at /fix_datasets.ipynb
