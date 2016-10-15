@@ -87,3 +87,349 @@ I tensorflow/core/common_runtime/direct_session.cc:45] Direct session inter op p
 [I 00:02:02.414 NotebookApp] Kernel started: 04be14ea-a73b-48fb-b1e4-2e2bf299d0cc
 [I 00:04:02.496 NotebookApp] Saving file at /fix_datasets.ipynb
 [I 00:08:02.582 NotebookApp] Saving file at /fix_datasets.ipynb
+[C 08:24:38.856 NotebookApp] received signal 15, stopping
+[I 08:24:38.860 NotebookApp] Shutting down kernels
+[I 08:24:38.965 NotebookApp] Kernel shutdown: 04be14ea-a73b-48fb-b1e4-2e2bf299d0cc
+[I 08:24:38.967 NotebookApp] Kernel shutdown: d7df8b0c-7743-427a-b9fc-ba8bb8a5d60c
+[I 08:24:38.967 NotebookApp] Kernel shutdown: 40f5cbee-55eb-4cd0-aaf6-98e99c829f26
+[I 13:58:20.636 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 13:58:21.026 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 13:58:21.027 NotebookApp] 0 active kernels 
+[I 13:58:21.027 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 13:58:21.027 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:58:23.325 NotebookApp] Interrupted...
+[I 13:58:23.325 NotebookApp] Shutting down kernels
+[I 13:58:26.122 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 13:58:26.122 NotebookApp] 0 active kernels 
+[I 13:58:26.122 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 13:58:26.122 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:58:30.026 NotebookApp] Kernel started: 11682f72-d170-4b9a-9ec9-3b650e9438d1
+[I 14:03:16.186 NotebookApp] Kernel started: d7e42ef5-8058-4dbf-b09f-9b7d3badcdb2
+[I 14:05:20.651 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 14:06:11.605 NotebookApp] Kernel started: b8bcb889-fa33-4a59-a743-f1c331b00686
+[I 14:06:16.125 NotebookApp] Creating new notebook in 
+[I 14:06:17.238 NotebookApp] Kernel started: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 14:08:12.207 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 14:08:18.196 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:10:18.199 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:12:17.344 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:14:18.933 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:20:20.301 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:24:17.397 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:26:17.404 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:29:11.915 NotebookApp] WebSocket ping timeout after 119915 ms.
+[W 14:29:16.505 NotebookApp] WebSocket ping timeout after 119915 ms.
+[W 14:29:17.586 NotebookApp] WebSocket ping timeout after 119915 ms.
+[I 14:29:55.698 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:32:08.504 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 14:32:08.889 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:36:09.318 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:41:50.989 NotebookApp] Kernel interrupted: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 14:42:09.192 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:44:09.017 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:48:09.027 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 16:58:42.134 NotebookApp] WebSocket ping timeout after 108968 ms.
+[W 16:58:42.449 NotebookApp] WebSocket ping timeout after 109283 ms.
+[I 19:21:48.460 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 19:53:47.894 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 19:55:48.329 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 19:59:48.342 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:00:06.344 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 20:03:47.928 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:05:48.264 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:07:48.372 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:09:48.118 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:15:48.471 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:17:47.976 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:19:48.402 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:23:48.442 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:27:48.010 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:29:48.015 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:31:48.022 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:33:38.939 NotebookApp] Kernel interrupted: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 20:33:48.029 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:34:03.645 NotebookApp] Kernel interrupted: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 20:34:05.666 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:35:11.631 NotebookApp] Kernel interrupted: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 20:35:19.686 NotebookApp] Kernel shutdown: 90f375a8-fe11-4495-a750-2c16c20efb40
+[I 20:35:22.472 NotebookApp] Kernel started: dc36b8c9-d4fa-408c-877e-32897dcec57b
+[I 20:37:22.999 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:39:22.820 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:41:22.603 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:43:23.497 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:45:23.508 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:49:23.517 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 21:03:22.770 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 21:13:22.807 NotebookApp] WebSocket ping timeout after 119915 ms.
+[I 22:54:56.605 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[I 22:54:57.026 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[I 22:54:58.187 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[I 22:54:58.471 NotebookApp] KernelRestarter: restarting kernel (1/5)
+[C 23:08:07.017 NotebookApp] received signal 15, stopping
+[I 23:08:07.017 NotebookApp] Shutting down kernels
+[I 23:08:07.122 NotebookApp] Kernel shutdown: d7e42ef5-8058-4dbf-b09f-9b7d3badcdb2
+[I 23:08:07.123 NotebookApp] Kernel shutdown: 11682f72-d170-4b9a-9ec9-3b650e9438d1
+[I 23:08:07.123 NotebookApp] Kernel shutdown: b8bcb889-fa33-4a59-a743-f1c331b00686
+[I 23:08:07.123 NotebookApp] Kernel shutdown: dc36b8c9-d4fa-408c-877e-32897dcec57b
+[I 00:24:32.553 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 00:24:32.553 NotebookApp] 0 active kernels 
+[I 00:24:32.554 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 00:24:32.554 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 00:24:37.126 NotebookApp] 404 GET /api/kernels/dc36b8c9-d4fa-408c-877e-32897dcec57b/channels?session_id=722491E896B14BC58563DE7155EF7A0A (127.0.0.1): Kernel does not exist: dc36b8c9-d4fa-408c-877e-32897dcec57b
+[W 00:24:37.144 NotebookApp] 404 GET /api/kernels/dc36b8c9-d4fa-408c-877e-32897dcec57b/channels?session_id=722491E896B14BC58563DE7155EF7A0A (127.0.0.1) 26.23ms referer=None
+[W 00:24:38.539 NotebookApp] 404 GET /api/kernels/dc36b8c9-d4fa-408c-877e-32897dcec57b/channels?session_id=722491E896B14BC58563DE7155EF7A0A (127.0.0.1): Kernel does not exist: dc36b8c9-d4fa-408c-877e-32897dcec57b
+[W 00:24:38.540 NotebookApp] 404 GET /api/kernels/dc36b8c9-d4fa-408c-877e-32897dcec57b/channels?session_id=722491E896B14BC58563DE7155EF7A0A (127.0.0.1) 7.05ms referer=None
+[I 00:24:44.658 NotebookApp] Kernel started: 11b6c281-79a0-4446-8175-5aee3fba6f4b
+[I 00:26:45.770 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 00:28:44.992 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 00:30:45.187 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 00:32:45.967 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:21:40.039 NotebookApp] Kernel started: 45febb01-459e-489a-a6d9-09958e041627
+[I 01:22:47.828 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:23:42.035 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 01:24:48.085 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:26:46.318 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:28:45.202 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:30:45.812 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:32:45.509 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:34:46.217 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:36:47.501 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:38:45.963 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:40:45.046 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:42:46.405 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:44:46.192 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:46:46.201 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:52:45.356 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:54:45.250 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:56:45.397 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[I 01:58:46.182 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[C 02:00:04.328 NotebookApp] received signal 15, stopping
+[I 02:00:04.330 NotebookApp] Shutting down kernels
+[I 02:00:04.449 NotebookApp] Kernel shutdown: 45febb01-459e-489a-a6d9-09958e041627
+[I 02:00:04.450 NotebookApp] Kernel shutdown: 11b6c281-79a0-4446-8175-5aee3fba6f4b
+[I 02:03:20.360 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 02:03:20.741 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 02:03:20.741 NotebookApp] 0 active kernels 
+[I 02:03:20.741 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 02:03:20.741 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 02:03:25.488 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 02:03:26.318 NotebookApp] Kernel started: 81ae1e8a-7754-4a45-8b57-5ecb245a98d7
+[I 02:05:26.494 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:05:26.495 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:09:26.611 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:09:26.612 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:15:26.798 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:15:26.798 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:17:12.743 NotebookApp] Kernel interrupted: 81ae1e8a-7754-4a45-8b57-5ecb245a98d7
+[I 02:17:26.707 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:17:26.708 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:19:26.715 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:19:26.716 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:20:44.009 NotebookApp] Kernel started: 26ca99f1-25ab-4e19-a827-1ab6b7077df5
+[I 02:21:26.725 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:21:26.726 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:22:44.242 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 02:23:26.727 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:23:26.728 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:36:46.088 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:36:46.089 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:37:26.772 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:37:26.773 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:39:27.152 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:39:27.153 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:39:37.679 NotebookApp] Kernel interrupted: 81ae1e8a-7754-4a45-8b57-5ecb245a98d7
+[I 02:39:40.727 NotebookApp] Kernel interrupted: 81ae1e8a-7754-4a45-8b57-5ecb245a98d7
+[I 02:39:43.887 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:39:43.888 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:41:26.788 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:41:26.789 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:44:06.374 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:44:06.375 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:44:13.619 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:44:13.620 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[C 02:44:29.771 NotebookApp] received signal 15, stopping
+[I 02:44:29.772 NotebookApp] Shutting down kernels
+[I 02:44:29.774 NotebookApp] Kernel shutdown: 26ca99f1-25ab-4e19-a827-1ab6b7077df5
+[I 02:44:29.877 NotebookApp] Kernel shutdown: 81ae1e8a-7754-4a45-8b57-5ecb245a98d7
+[I 02:51:56.445 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 02:51:56.779 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 02:51:56.779 NotebookApp] 0 active kernels 
+[I 02:51:56.779 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 02:51:56.779 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 02:52:01.875 NotebookApp] 302 GET / (127.0.0.1) 0.71ms
+[W 02:52:06.347 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 02:52:07.391 NotebookApp] Kernel started: 9adc5547-892a-4714-bb5c-ff728eae93f4
+[I 02:54:07.485 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:54:07.486 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:56:09.598 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:56:09.599 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:58:07.491 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:58:07.491 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 02:59:00.389 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 02:59:00.390 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:00:13.677 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:00:13.678 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:08:07.609 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:08:07.610 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:10:10.785 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:10:10.785 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:12:07.523 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:12:07.523 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:14:07.527 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:14:07.528 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:15:32.506 NotebookApp] Kernel interrupted: 9adc5547-892a-4714-bb5c-ff728eae93f4
+[I 03:15:40.327 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:15:40.328 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:15:46.956 NotebookApp] Kernel shutdown: 9adc5547-892a-4714-bb5c-ff728eae93f4
+[W 03:16:03.417 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 03:16:04.729 NotebookApp] Kernel started: 8b634cc6-47f4-4ea6-b9a2-574d272a7849
+[I 03:18:04.834 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:18:04.835 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:20:04.839 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:20:04.840 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:24:05.202 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:24:05.202 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:28:04.856 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:28:04.857 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:30:04.867 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:30:04.868 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:32:04.864 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:32:04.865 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:34:04.865 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:34:04.866 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:36:04.871 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:36:04.872 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:42:04.973 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:42:04.973 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:44:05.181 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 03:44:05.182 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 03:55:49.079 NotebookApp] Kernel started: b8a44f1f-d8a2-4907-82cf-0d9745531b4b
+[W 03:56:03.504 NotebookApp] Notebook tags_net_analysis.ipynb is not trusted
+[I 03:56:04.261 NotebookApp] Kernel started: bff668e9-11af-45c2-b88d-7d7120dddea8
+[W 03:56:15.293 NotebookApp] Notebook tag_analysis_on_10k_tags.ipynb is not trusted
+[I 03:56:16.062 NotebookApp] Kernel started: adac0d09-701a-4472-9435-b4aad8438d30
+[I 03:56:27.028 NotebookApp] Kernel started: 81bc4ca0-07db-442b-8c36-c8273c8b1223
+[I 03:56:32.005 NotebookApp] Kernel started: 74dce3fa-300c-4c8b-9918-70eb4b0452a2
+[I 03:58:32.116 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 04:00:32.117 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 04:02:32.124 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 04:06:00.296 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[C 04:11:06.814 NotebookApp] received signal 15, stopping
+[I 04:11:06.814 NotebookApp] Shutting down kernels
+[I 04:11:06.918 NotebookApp] Kernel shutdown: 74dce3fa-300c-4c8b-9918-70eb4b0452a2
+[I 04:11:06.918 NotebookApp] Kernel shutdown: bff668e9-11af-45c2-b88d-7d7120dddea8
+[I 04:11:06.919 NotebookApp] Kernel shutdown: adac0d09-701a-4472-9435-b4aad8438d30
+[I 04:11:06.919 NotebookApp] Kernel shutdown: 8b634cc6-47f4-4ea6-b9a2-574d272a7849
+[I 04:11:06.919 NotebookApp] Kernel shutdown: b8a44f1f-d8a2-4907-82cf-0d9745531b4b
+[I 04:11:06.919 NotebookApp] Kernel shutdown: 81bc4ca0-07db-442b-8c36-c8273c8b1223
+[I 04:20:36.828 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 04:20:37.169 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 04:20:37.169 NotebookApp] 0 active kernels 
+[I 04:20:37.169 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 04:20:37.169 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 04:20:43.392 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 04:20:44.535 NotebookApp] Kernel started: 1f6db1fc-f73c-47c3-9bb3-47cec48968ca
+[I 04:22:44.695 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:22:44.696 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:24:46.570 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:24:46.571 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:26:44.829 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:26:44.830 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:34:45.482 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:34:45.483 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:40:45.160 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:40:45.160 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:42:45.082 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:42:45.083 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:46:45.098 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:46:45.099 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:52:45.212 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:52:45.213 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:54:45.128 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:54:45.128 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 04:58:45.144 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 04:58:45.144 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 05:00:45.154 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 05:00:45.155 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 05:02:45.161 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 05:02:45.162 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 05:10:45.650 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 05:10:45.651 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 05:12:45.215 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 05:12:45.216 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[C 05:47:52.122 NotebookApp] received signal 15, stopping
+[I 05:47:52.124 NotebookApp] Shutting down kernels
+[I 05:47:52.137 NotebookApp] Kernel shutdown: 1f6db1fc-f73c-47c3-9bb3-47cec48968ca
+[I 14:31:00.110 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 14:31:00.435 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 14:31:00.435 NotebookApp] 0 active kernels 
+[I 14:31:00.435 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 14:31:00.435 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:31:07.969 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:31:07.973 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:31:09.197 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:31:09.198 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:31:10.839 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1): Kernel does not exist: 1f6db1fc-f73c-47c3-9bb3-47cec48968ca
+[W 14:31:10.880 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1) 49.89ms referer=None
+[W 14:31:12.818 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1): Kernel does not exist: 1f6db1fc-f73c-47c3-9bb3-47cec48968ca
+[W 14:31:12.819 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1) 3.64ms referer=None
+[W 14:31:14.052 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1): Kernel does not exist: 1f6db1fc-f73c-47c3-9bb3-47cec48968ca
+[W 14:31:14.053 NotebookApp] 404 GET /api/kernels/1f6db1fc-f73c-47c3-9bb3-47cec48968ca/channels?session_id=65CF13BA927143B183235222A401900F (127.0.0.1) 3.58ms referer=None
+[W 14:31:23.016 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 14:31:23.944 NotebookApp] Kernel started: 29495d75-e739-40e7-bee7-47fe3e04b6e9
+[I 14:33:25.070 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:33:25.071 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 14:37:25.029 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 14:37:25.030 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 15:23:24.280 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 15:23:24.280 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 15:25:18.131 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 15:25:18.132 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[C 15:25:36.170 NotebookApp] received signal 15, stopping
+[I 15:25:36.178 NotebookApp] Shutting down kernels
+[I 15:25:36.280 NotebookApp] Kernel shutdown: 29495d75-e739-40e7-bee7-47fe3e04b6e9
+[I 15:34:18.660 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 15:34:19.005 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 15:34:19.005 NotebookApp] 0 active kernels 
+[I 15:34:19.005 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 15:34:19.005 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 15:34:26.332 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 15:34:27.355 NotebookApp] Kernel started: 94b411c0-c5a3-4ab6-a109-998d9df9ce2b
+[I 15:36:27.599 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 15:36:27.600 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 15:38:28.224 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 15:38:28.225 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 16:29:12.966 NotebookApp] Kernel interrupted: 94b411c0-c5a3-4ab6-a109-998d9df9ce2b
+[I 16:29:38.388 NotebookApp] Kernel shutdown: 94b411c0-c5a3-4ab6-a109-998d9df9ce2b
+[W 16:29:40.949 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 16:29:42.055 NotebookApp] Kernel started: 6f1d1f4d-580e-4468-a903-6b8e3acf290e
+[I 16:31:42.276 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 16:31:42.278 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[C 17:33:20.503 NotebookApp] received signal 15, stopping
+[I 17:33:20.504 NotebookApp] Shutting down kernels
+[I 17:33:20.616 NotebookApp] Kernel shutdown: 6f1d1f4d-580e-4468-a903-6b8e3acf290e
+[I 17:33:13.966 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 17:33:14.290 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 17:33:14.290 NotebookApp] 0 active kernels 
+[I 17:33:14.290 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 17:33:14.290 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:33:46.338 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 17:33:47.269 NotebookApp] Kernel started: 2b2f2a3f-4b1e-428c-918b-301634575749
+[I 17:35:48.177 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:35:48.178 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:39:47.451 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:39:47.452 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:41:47.873 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:41:47.874 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:43:47.617 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:43:47.618 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:45:49.905 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:45:49.906 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:47:49.963 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:47:49.963 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:49:50.069 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:49:50.070 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:51:50.043 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:51:50.043 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 17:54:24.978 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 17:54:24.979 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
