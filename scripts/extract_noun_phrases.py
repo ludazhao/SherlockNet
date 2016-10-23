@@ -185,16 +185,16 @@ def worker_by_tag(tag):
     pickle.dump(idx_to_noun_phrases, open("/data/nearest_neighbor_tagging/idx_to_noun_phrases_{}.pkl".format(tag), 'w'))
 
 # for tag in indices:
-# 	worker(tag)
-	
+#     worker(tag)
+    
 def worker_by_10k(start):
     print "Extracting noun phrases from {} to {}".format(start, start + 10000)
     idx_to_noun_phrases = {}
     
     ctr = 0
     for idx in range(start, start + 10000):
-    	ctr += 1
-    	#if ctr == 50: break
+        ctr += 1
+        #if ctr == 50: break
         chk = idx/5000
         i = idx % 5000
         try:
@@ -205,13 +205,30 @@ def worker_by_10k(start):
     
     pickle.dump(idx_to_noun_phrases, open("/data/nearest_neighbor_tagging/idx_to_noun_phrases_{}.pkl".format(start), 'w'))
     
-p = mp.Pool(16)
+p = mp.Pool(8)
 #p.map(worker_by_10k, range(0, 970218, 10000))
 #p.map(worker_by_10k, [90000, 70000, 110000, 240000, 340000, 460000, 160000, 230000, 530000])
 
-for i in [90000, 460000]:
-	print i
-	worker_by_10k(i)
+# get unmapped ones
+chunks_to_process = []
+chunks = range(0,970218,10000)
+for chk in chunks:
+    fn = "/data/nearest_neighbor_tagging/idx_to_noun_phrases_{}.pkl".format(chk)
+    if not glob.glob(fn):
+        chunks_to_process.append(chk)
+    else:
+        try:
+            a = pickle.load(open(fn, 'r'))
+        except:
+            chunks_to_process.append(chk)
+    
+    
+print chunks_to_process
+p.map(worker_by_10k, chunks_to_process)
+
+# for i in chunks_to_process:
+#     print i
+#     worker_by_10k(i)
 # for tag in indices:
-# 	worker(tag)
+#     worker(tag)
 #     

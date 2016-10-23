@@ -433,3 +433,272 @@ I tensorflow/core/common_runtime/direct_session.cc:45] Direct session inter op p
 [W 17:51:50.043 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
 [I 17:54:24.978 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
 [W 17:54:24.979 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[C 17:56:34.322 NotebookApp] received signal 15, stopping
+[I 17:56:34.322 NotebookApp] Shutting down kernels
+[I 17:56:34.425 NotebookApp] Kernel shutdown: 2b2f2a3f-4b1e-428c-918b-301634575749
+[I 18:00:12.416 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 18:00:12.768 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 18:00:12.768 NotebookApp] 0 active kernels 
+[I 18:00:12.768 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 18:00:12.768 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 18:00:23.194 NotebookApp] Notebook nearest_neighbor_ocr_tagging_pca.ipynb is not trusted
+[I 18:00:24.285 NotebookApp] Kernel started: c961db05-03e7-4042-80f8-62b384f32477
+[I 18:02:24.542 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:02:24.543 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:04:24.506 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:04:24.507 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:06:24.573 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:06:24.574 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:10:24.972 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:10:24.973 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:14:25.099 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:14:25.100 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:14:28.452 NotebookApp] Notebook tags_net_analysis.ipynb is not trusted
+[I 18:14:29.226 NotebookApp] Kernel started: 1938d1ce-c795-4e24-8d8d-0b94f63b32ba
+[W 18:14:36.597 NotebookApp] Notebook tag_10k.ipynb is not trusted
+[I 18:14:37.794 NotebookApp] Kernel started: db5d2186-c829-486e-aef4-1ddb2f72d32c
+[I 18:14:53.134 NotebookApp] Kernel started: ea54b980-f539-4935-9c65-3c3fa7020e07
+[I 18:16:54.443 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 18:20:31.031 NotebookApp] Kernel interrupted: c961db05-03e7-4042-80f8-62b384f32477
+[I 18:22:28.021 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:22:28.022 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:22:53.861 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 18:24:27.170 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:24:27.171 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:24:53.669 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[I 18:25:56.541 NotebookApp] Creating new notebook in 
+[I 18:25:57.773 NotebookApp] Kernel started: 9b7eb0e2-9f34-488c-93b7-dbdaeb87a5c1
+[I 18:26:27.927 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 18:26:27.928 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 18:27:57.901 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:29:57.880 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:31:57.911 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:35:57.906 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:39:57.882 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:41:57.903 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:45:57.905 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:59:57.977 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 19:01:57.922 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 19:07:57.928 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 19:09:57.949 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 19:23:57.966 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:08:27.230 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 20:08:27.231 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:29:58.058 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:31:58.053 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:33:58.060 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:35:58.062 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:36:04.445 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:43:58.092 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:48:28.292 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 20:48:28.293 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:54:28.256 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 20:54:28.257 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:56:28.265 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_pca.ipynb
+[W 20:56:28.267 NotebookApp] Saving untrusted notebook nearest_neighbor_ocr_tagging_pca.ipynb
+[I 20:59:58.101 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:01:58.100 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:05:58.098 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:07:58.131 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:15:58.196 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:17:32.788 NotebookApp] Kernel interrupted: 9b7eb0e2-9f34-488c-93b7-dbdaeb87a5c1
+[I 21:17:58.112 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:19:58.133 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:21:58.115 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 21:23:15.134 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[W 21:36:54.654 NotebookApp] WebSocket ping timeout after 119907 ms.
+[W 21:36:58.144 NotebookApp] WebSocket ping timeout after 119908 ms.
+[C 21:43:41.342 NotebookApp] received signal 15, stopping
+[I 21:43:41.343 NotebookApp] Shutting down kernels
+[I 21:43:42.996 NotebookApp] Kernel shutdown: 9b7eb0e2-9f34-488c-93b7-dbdaeb87a5c1
+[I 21:43:42.996 NotebookApp] Kernel shutdown: ea54b980-f539-4935-9c65-3c3fa7020e07
+[I 21:43:42.996 NotebookApp] Kernel shutdown: db5d2186-c829-486e-aef4-1ddb2f72d32c
+[I 21:43:42.997 NotebookApp] Kernel shutdown: c961db05-03e7-4042-80f8-62b384f32477
+[I 21:43:42.997 NotebookApp] Kernel shutdown: 1938d1ce-c795-4e24-8d8d-0b94f63b32ba
+[I 16:02:35.777 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 16:02:36.147 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 16:02:36.147 NotebookApp] 0 active kernels 
+[I 16:02:36.148 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 16:02:36.148 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:06:44.425 NotebookApp] received signal 15, stopping
+[I 16:06:44.432 NotebookApp] Shutting down kernels
+[I 16:08:19.377 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 16:08:19.744 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 16:08:19.745 NotebookApp] 0 active kernels 
+[I 16:08:19.745 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 16:08:19.745 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 16:12:22.213 NotebookApp] Kernel started: b1eea3e5-19a3-423f-80cf-d9ae559de8fd
+[I 16:14:22.530 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:14:52.214 NotebookApp] KernelRestarter: restarting kernel (1/5)
+WARNING:root:kernel b1eea3e5-19a3-423f-80cf-d9ae559de8fd restarted
+[C 16:17:07.064 NotebookApp] received signal 15, stopping
+[I 16:17:07.071 NotebookApp] Shutting down kernels
+[I 16:17:07.577 NotebookApp] Kernel shutdown: b1eea3e5-19a3-423f-80cf-d9ae559de8fd
+[I 16:21:42.480 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 16:21:42.843 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 16:21:42.843 NotebookApp] 0 active kernels 
+[I 16:21:42.843 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 16:21:42.843 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 16:21:50.280 NotebookApp] 302 GET / (127.0.0.1) 0.73ms
+[I 16:22:06.734 NotebookApp] Kernel started: 32e64c7b-d28b-46c3-bf3a-7e9ab03a1e52
+[I 16:24:07.068 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:26:06.997 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:30:07.061 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:32:08.330 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:34:06.978 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:36:07.016 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:38:07.195 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:40:07.068 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:42:07.326 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:44:07.412 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:45:53.537 NotebookApp] Kernel interrupted: 32e64c7b-d28b-46c3-bf3a-7e9ab03a1e52
+[I 16:46:07.427 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:48:07.911 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:54:06.948 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:56:07.582 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:58:07.863 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 16:58:47.256 NotebookApp] Kernel interrupted: 32e64c7b-d28b-46c3-bf3a-7e9ab03a1e52
+[I 16:59:43.734 NotebookApp] Kernel interrupted: 32e64c7b-d28b-46c3-bf3a-7e9ab03a1e52
+[I 16:59:45.514 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:03:38.689 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:13:47.003 NotebookApp] Kernel shutdown: 32e64c7b-d28b-46c3-bf3a-7e9ab03a1e52
+[I 17:13:50.070 NotebookApp] Kernel started: e2c519e9-1187-414b-a984-318674b79333
+[I 17:15:53.552 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:21:50.931 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:25:50.867 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:31:51.183 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:41:50.171 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:43:50.087 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:47:49.994 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:49:50.749 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:55:50.264 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:57:50.400 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 17:59:50.119 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:01:50.403 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:02:57.392 NotebookApp] Kernel interrupted: e2c519e9-1187-414b-a984-318674b79333
+[I 18:03:30.286 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:04:37.079 NotebookApp] Kernel shutdown: e2c519e9-1187-414b-a984-318674b79333
+[I 18:04:40.852 NotebookApp] Kernel started: 8d23266f-87ac-41bd-b642-39c9d6435fe0
+[I 18:06:41.099 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:12:41.164 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:22:16.217 NotebookApp] Kernel interrupted: 8d23266f-87ac-41bd-b642-39c9d6435fe0
+[I 18:22:42.134 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:27:18.699 NotebookApp] Kernel shutdown: 8d23266f-87ac-41bd-b642-39c9d6435fe0
+[I 18:27:22.078 NotebookApp] Kernel started: 1cbcccac-2158-42b5-9203-df17e45f09dd
+[I 18:29:21.515 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:29:21.790 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:29:25.362 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 18:31:22.827 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 20:28:21.987 NotebookApp] Kernel started: 463499fa-f5fd-4e94-92c0-c603e1d3882b
+[I 20:30:22.623 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_test.ipynb
+[C 20:43:20.972 NotebookApp] received signal 15, stopping
+[I 20:43:20.973 NotebookApp] Shutting down kernels
+[I 20:43:21.077 NotebookApp] Kernel shutdown: 1cbcccac-2158-42b5-9203-df17e45f09dd
+[I 20:43:21.077 NotebookApp] Kernel shutdown: 463499fa-f5fd-4e94-92c0-c603e1d3882b
+[I 01:28:40.024 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 01:28:40.026 NotebookApp] 0 active kernels 
+[I 01:28:40.026 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 01:28:40.026 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 01:28:43.225 NotebookApp] 302 GET / (127.0.0.1) 0.64ms
+[I 01:28:44.005 NotebookApp] 302 GET / (127.0.0.1) 0.39ms
+[I 01:32:08.695 NotebookApp] Creating new notebook in 
+[I 01:32:10.528 NotebookApp] Kernel started: b9342033-8caa-467c-947c-94e007e673e2
+[I 01:32:44.591 NotebookApp] Kernel started: 6fcecf20-aef4-4ef5-8d23-b46d44602f69
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 01:33:59.243 NotebookApp] Kernel started: 458857ed-6e17-47f9-81ab-7798d998ca1e
+[I 01:34:10.611 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:36:01.288 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 01:36:12.122 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:38:12.094 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:40:12.092 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:42:12.117 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:44:12.092 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:46:12.113 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:52:12.230 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:54:12.176 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:56:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 01:58:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:00:12.115 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:06:12.182 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:08:12.778 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:10:12.178 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:12:12.102 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:13:22.289 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_words.ipynb
+[I 02:14:12.093 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:16:12.098 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:18:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:22:12.094 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:24:12.100 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:26:12.095 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:28:12.123 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:30:12.095 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:32:12.103 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:34:13.043 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:36:12.182 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:38:12.390 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:40:12.099 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:42:12.181 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:44:12.100 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:46:12.184 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:48:12.182 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:50:12.099 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:52:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:54:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:56:12.102 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:58:12.100 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:00:12.227 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:02:12.099 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:04:12.102 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:06:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:08:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:18:12.168 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:20:12.169 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:22:12.090 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:24:12.094 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:25:36.179 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:26:12.230 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:28:12.236 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:30:12.097 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:32:12.089 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:34:12.170 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:36:12.173 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:38:12.191 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:40:12.093 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:42:12.094 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:44:12.093 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:46:12.096 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:48:12.094 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:50:12.100 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:52:12.125 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:54:12.113 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:56:12.101 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:58:12.106 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:00:12.108 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:02:12.104 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:04:12.100 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:06:12.103 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:07:08.193 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:08:12.099 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:10:12.102 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:12:12.186 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:13:41.711 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:14:12.254 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:16:12.099 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:20:12.274 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:22:12.264 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:00:12.640 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:02:12.319 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:04:12.247 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:06:12.242 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:08:12.243 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:10:12.168 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:12:12.240 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:14:12.173 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:16:12.321 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:18:12.324 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:20:12.249 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:22:12.259 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:24:12.249 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:26:12.251 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 06:27:26.831 NotebookApp] Saving file at /filter_final_tags.ipynb
