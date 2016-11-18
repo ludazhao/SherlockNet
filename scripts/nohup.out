@@ -1109,6 +1109,7 @@ ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=token_used
 [I 22:47:42.802 NotebookApp] Kernel shutdown: a87bea9d-3c59-47b7-a8a3-091a3cad5977
 [I 22:47:42.802 NotebookApp] Kernel shutdown: 487e4f20-36f2-4e30-885f-afca655cd94b
 [I 22:47:42.803 NotebookApp] Kernel shutdown: a044c424-37e3-4da5-bd65-fc3091c57899
+<<<<<<< HEAD
 [I 06:03:32.795 NotebookApp] The port 7070 is already in use, trying another random port.
 [I 06:03:32.799 NotebookApp] The port 7071 is already in use, trying another random port.
 [I 06:03:32.799 NotebookApp] The port 7072 is already in use, trying another random port.
@@ -1120,3 +1121,547 @@ ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=token_used
 [I 06:03:32.808 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 [C 23:51:29.255 NotebookApp] received signal 15, stopping
 [I 23:51:29.266 NotebookApp] Shutting down kernels
+=======
+[I 00:07:20.779 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 00:07:21.140 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 00:07:21.141 NotebookApp] 0 active kernels 
+[I 00:07:21.141 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 00:07:21.141 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 00:07:23.210 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:23.254 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 54.48ms referer=None
+[W 00:07:24.555 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:24.556 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 4.03ms referer=None
+[W 00:07:26.355 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:26.356 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 4.14ms referer=None
+[W 00:07:27.516 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:27.518 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 4.01ms referer=None
+[W 00:07:30.429 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:30.430 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 3.94ms referer=None
+[W 00:07:32.828 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:32.829 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 3.92ms referer=None
+[W 00:07:39.292 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1): Kernel does not exist: a044c424-37e3-4da5-bd65-fc3091c57899
+[W 00:07:39.293 NotebookApp] 404 GET /api/kernels/a044c424-37e3-4da5-bd65-fc3091c57899/channels?session_id=8FE3756F00CD49DE8644139A4E0C140C (127.0.0.1) 4.22ms referer=None
+[I 04:28:28.734 NotebookApp] The port 7071 is already in use, trying another random port.
+[I 04:28:28.737 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 04:28:28.737 NotebookApp] 0 active kernels 
+[I 04:28:28.737 NotebookApp] The Jupyter Notebook is running at: http://localhost:7072/
+[I 04:28:28.737 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 04:29:44.197 NotebookApp] Kernel started: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 04:31:45.001 NotebookApp] Saving file at /upload_to_flickr.ipynb
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 04:59:44.552 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 05:01:45.181 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 05:07:21.713 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 05:07:44.500 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 05:07:51.207 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 05:08:26.311 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 05:09:45.202 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 502 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    <!DOCTYPE html>
+<html lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+html {
+    height: 100%;
+}
+body {
+    background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+}
+table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+h1 {
+    font-size: 42px;
+    font-weight: 400;
+    color: #400090;
+}
+p {
+    color: #1A1A1A;
+}
+#message-1 {
+    font-weight: bold;
+    margin: 0;
+}
+#message-2 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    max-width: 17em;
+    _width: 17em;
+}
+#spanishContent {
+    display: none;
+}
+    </style>
+<script>
+  document.write('<img src="//geo.yahoo.com/b?s=1197757129
+ERROR:flickrapi.auth.OAuthFlickrInterface:    t='+new Date().getTime()+'
+ERROR:flickrapi.auth.OAuthFlickrInterface:    err_url='+encodeURIComponent(document.URL)+'
+ERROR:flickrapi.auth.OAuthFlickrInterface:    err=502
+ERROR:flickrapi.auth.OAuthFlickrInterface:    test='+encodeURIComponent('-')+'" width="0px" height="0px"/>');
+</script>
+</head>
+<body>
+<!-- status code : 502 -->
+<!-- Server Connection Closed -->
+<!-- host machine: r31.ycpi.sjb.yahoo.net -->
+<!-- timestamp: 1477818565.000 -->
+<!-- url: https://api.flickr.com/services/rest/?photo_id=11074470624
+ERROR:flickrapi.auth.OAuthFlickrInterface:    tags=sherlocknet:tag="method",+sherlocknet:tag="upper",+sherlocknet:tag="main",+sherlocknet:tag="line",+sherlocknet:tag="differ",+sherlocknet:tag="distance",+sherlocknet:tag="side",+sherlocknet:tag="mine",+sherlocknet:tag="round",+sherlocknet:tag="extreme",+sherlocknet:tag="principe",+sherlocknet:tag="chamber",+sherlocknet:tag="work",+sherlocknet:tag="metal",+sherlocknet:tag="complete",+sherlocknet:tag="wheel",+sherlocknet:tag="bottom",+sherlocknet:category="diagrams"
+ERROR:flickrapi.auth.OAuthFlickrInterface:    nojsoncallback=1
+ERROR:flickrapi.auth.OAuthFlickrInterface:    method=flickr.photos.addTags
+ERROR:flickrapi.auth.OAuthFlickrInterface:    format=json-->
+<table>
+<tbody><tr>
+    <td>
+    <div id="englishContent">
+        <script type="text/javascript">
+        if (window.location.hostname=='att.yahoo.com'){
+            document.write('<img src="https://s1.yimg.com/rz/d/att_en-US_f_p_bestfit_2x.png" alt="AT
+ERROR:flickrapi.auth.OAuthFlickrInterface:    T">');
+        }else{
+            document.write('<img src="https://s.yimg.com/nn/img/yahoo-logo-201402200629.png" alt="Yahoo Logo">');
+        }    
+        </script> 
+        <h1 style="margin-top:20px;">Will be right back...</h1>
+        <p id="message-1">Thank you for your patience.</p>
+        <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+    </div>
+    <div id="spanishContent"> 
+        <img src="https://s1.yimg.com/rz/d/att_es-US_f_p_bestfit_2x.png" alt="AT
+ERROR:flickrapi.auth.OAuthFlickrInterface:    T En Vivo" style="max-width:310px">
+        <h1 style="margin-top:20px;">Volvemos enseguidaâ¦</h1>
+        <p id="message-1">Gracias por tu paciencia.</p>
+        <p id="message-2">Nuestros ingenieros estÃ¡n trabajando rÃ¡pidamente para resolver el problema.</p>
+    </div>
+    <script type="text/javascript">
+    if (window.location.hostname=='espanol.att.yahoo.com'){
+        document.getElementById('englishContent').style.display = 'none';
+        document.getElementById('spanishContent').style.display = 'block';
+    }   
+    </script>
+    </td>
+</tr>
+</tbody></table>
+
+
+</body></html>
+
+[I 15:43:18.546 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 15:43:52.905 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 15:44:31.661 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 15:44:38.562 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 15:44:58.500 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 15:45:19.127 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[W 16:15:37.554 NotebookApp] WebSocket ping timeout after 119921 ms.
+[I 17:11:57.623 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 20:20:30.780 NotebookApp] Creating new notebook in 
+[I 20:20:33.543 NotebookApp] Kernel started: 40396ae1-2a0f-43c0-acd6-c6e6577c7a3f
+[I 20:22:34.554 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 20:24:34.553 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 20:26:01.672 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 20:26:34.569 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 20:27:35.912 NotebookApp] Kernel interrupted: 40396ae1-2a0f-43c0-acd6-c6e6577c7a3f
+[I 20:28:36.670 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 20:30:09.818 NotebookApp] Kernel interrupted: 40396ae1-2a0f-43c0-acd6-c6e6577c7a3f
+[I 20:30:33.663 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 20:33:23.065 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 22:43:20.229 NotebookApp] Kernel shutdown: 40396ae1-2a0f-43c0-acd6-c6e6577c7a3f
+[I 04:29:00.812 NotebookApp] 302 GET / (127.0.0.1) 0.39ms
+[W 04:29:42.011 NotebookApp] Notebook image_name_to_url.ipynb is not trusted
+[I 04:29:42.529 NotebookApp] Kernel started: f0091ad6-5115-47b6-ae86-388b1075cdaa
+[I 04:29:56.664 NotebookApp] Kernel started: f6b3f49f-a096-417b-aad4-20472798dbcb
+[I 04:31:58.091 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 04:33:58.891 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 04:35:56.578 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 04:37:56.583 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 04:39:56.544 NotebookApp] Saving file at /make_related_images_json.ipynb
+[I 04:41:34.723 NotebookApp] Saving file at /make_related_images_json.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 502 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    <!DOCTYPE html>
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="Flickr is almost certainly the best online photo management and sharing application in the world. Show off your favorite photos and videos to the world, securely and privately show content to your friends and family, or blog the photos and videos you take with a cameraphone.">
+	<meta http-equiv="imagetoolbar" content="no">
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Flickr" />
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+	<meta name="viewport" content="width=1036">
+	<meta name="application-name" content="Flickr"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/_flickrpanda/favicon-msapplication-tileimage.png"/>
+	<title>Flickr</title>
+	<style type="text/css" media="screen">
+	html {
+		height:100%;
+	}
+
+	body {
+		height:100%; 
+		margin:0; padding:0;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight: 300;
+		color: #000;
+		background: white url(/_flickrpanda/bg_error_hold_your_clicks.jpg) no-repeat center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	#Main {
+		width: 100%;
+	}
+
+	body.new-footer #main, body.new-footer #Main {
+		margin-bottom: 0;
+	}
+	
+	#bg {
+		width: 100%; 
+		height: 100%;
+		min-width: 600px;
+		min-height: 445px;
+		
+	}
+	
+	#bg p {
+		line-height: .8em;
+	}
+	
+	#bg p,
+	#bg span{
+		text-shadow: 0px 1px 1px rgba(255,255,255,0.5), 0px 0px 2px #fff;
+	}
+
+	.content {
+		position: relative; 
+		z-index: 1;	
+		padding: 10% 30px 0 34%;
+		
+	}
+
+	.content span {
+		line-height: 1.6em;
+		font-size: 17px;
+	}
+
+	h1 {
+		margin: 0;
+		font-weight: 400;
+		font-size: 2.1em;
+		margin-bottom: 24px;
+	}
+
+	a.attribution {
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		background-color: #000;
+		background: rgba(0,0,0,0.45);
+		font-size: 11px;
+		padding: 7px 13px;
+		color: #dfdfdf;
+	}
+
+	.TheError {background:#000;color:#0F0;padding:1em;position:absolute;bottom:30px;width:60%;margin: 0 20% 0 20%;}
+	.TheError pre {margin:0;}
+		
+		
+	#global-nav .logo {
+	  display: block;
+	  height: 100%;
+	  position: absolute;
+	  left: 10px;
+	  top: 0;
+	}
+	#global-nav .logo .refresh-logo-2013,
+	#global-nav .logo .refresh-logo-2013-2x {
+	  text-indent: -9999px;
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-position: center center;
+	  background-image: url(/_flickrpanda/flickr_logo_small_white.png);
+	  background-image: -webkit-image-set(url(/_flickrpanda/flickr_logo_small_white.png) 1x, url(/_flickrpanda/flickr_logo_large_white.png) 2x);
+	  background-repeat: no-repeat;
+	}
+	#global-nav .logo a {
+	  display: block;
+	  height: 100%;
+	  width: 100%;
+	}
+	#global-nav .logo a img {
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  bottom: 12px;
+	}
+	
+
+	#global-nav {
+	  color: #000;
+	  /* to preserve line-height and selector appearance */
+	  /* because legend doesn't inherit in IE */
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 1000;
+	  height: 46px;
+	  width: 100%;
+	  min-width: 975px;
+	  margin: auto;
+	  padding: 0;
+	  text-align: left;
+	  background: rgba(0, 0, 0, 0.8);
+	  background: url(/_flickrpanda/iefallbacktrans.png) repeat scroll \9;
+	  box-shadow: none;
+	  /* Profile */
+	}
+	#global-nav * {
+	  -moz-box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	}
+	#global-nav div, #global-nav ul, #global-nav ol, #global-nav li,
+	#global-nav form, #global-nav fieldset,
+	#global-nav legend, #global-nav input, #global-nav textarea {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	  color: #666666;
+	}
+	
+	</style>
+</head>
+<body>
+	<div id="global-nav">
+	<div class="logo" style="width: 70px;">
+		<a href="/" title="Flickr logo. If you click it, you'll go home" >
+			<span class="refresh-logo-2013"> Flickr logo. If you click it, you'll go home </span>
+		</a>
+	</div>
+	</div>
+	<div id="bg">
+
+		<a class="attribution" href="/photos/toyokazu/8644384737/">by Toyokazu</a>
+		<div class="content">	
+			<h1>Bad, bad panda!</h1>
+			<p><span>We
+ERROR:flickrapi.auth.OAuthFlickrInterface:    #8217;re aware of the problem and are fixing it.<br>Thanks for your patience.</span></p>
+			<p><span>Nous connaissons ce problÃ¨me et nous travaillons Ã  le rÃ©soudre.</span><br>Merci pour votre patience et pour votre comprÃ©hension.</p>
+			<p><span>Estamos al tanto del problema y estamos intentando solucionarlo.</span><br>Gracias por tu paciencia.</p>
+			<p><span>Wir sind Ã¼ber das Problem informiert und arbeiten an einer LÃ¶sung.</span><br>Vielen Dank fÃ¼r Ihre Geduld.</p>
+			<p><span>Siamo al corrente del problema e ce ne stiamo occupando.</span><br>Ti ringraziamo per la pazienza.</p>
+			<p><span>JÃ¡ sabemos qual Ã© o problema e vamos resolvÃª-lo.</span><br>Obrigado pela paciÃªncia.</p>
+			<p><span>ë¬¸ì ë¥¼ ìê³  ì´í´ë³´ë ì¤ìëë¤.</span><br>ê¸°ë¤ë ¤ ì£¼ìì ê°ì¬í©ëë¤.</p>
+			<p><span>æåå·²ç¶æè­å°è©²åé¡ï¼ä¸¦æ­£å¨ç¡å¿«è§£æ±ºã</span><br>å¤è¬ä½ çèå¿ç­åï¼</p>
+			<p><span>ChÃºng tÃ´i ÄÄ nháº­n ra sá»± cá» vÃ  Äang tiÌm hiá»u chuÌng.</span><br>Cáº£m Æ¡n viÌ sÆ°Ì£ kiÃªn nhÃ¢Ìn cuÌa baÌ£n.</p>
+			<p><span>Kami mengetahui masalah ini dan sedang mengatasinya.</span><br>Terima kasih atas kesabaran Anda.</p>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+var a="http://geo.yahoo.com/b?s=792600516
+ERROR:flickrapi.auth.OAuthFlickrInterface:    t="+parseInt(1E5*Math.random(),10).toString(36);(new Image).src=a;
+</script>
+<noscript>
+	<img src="http://geo.yahoo.com/b?s=792600516
+ERROR:flickrapi.auth.OAuthFlickrInterface:    t=333" height=1 width=1>
+</noscript>
+</html>
+<!--
+<HTML>
+<HEAD>
+<TITLE>Unknown Host</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white" FGCOLOR="black">
+<H1>Unknown Host</H1>
+<HR>
+
+<FONT FACE="Helvetica,Arial"><B>
+Description: Unable to locate the server named "<EM>www.yfor.flickr.com</EM>" ---
+the server does not have a DNS entry.  Perhaps there is a misspelling
+in the server name, or the server no longer exists.  Double-check the
+name and try again.
+</B></FONT>
+<HR>
+</BODY>
+-->
+
+[I 12:00:44.648 NotebookApp] 302 GET / (127.0.0.1) 0.39ms
+[I 12:02:54.496 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 502 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+[I 18:45:01.005 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:48:41.044 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:14:43.168 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:24:18.172 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:24:48.610 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:26:44.105 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:28:43.910 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:30:42.243 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:30:49.633 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:32:22.659 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:32:43.996 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:34:19.878 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:34:42.955 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 504 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    <!DOCTYPE html>
+<html lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Yahoo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+html {
+    height: 100%;
+}
+body {
+    background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    font: 300 18px "helvetica neue", helvetica, verdana, tahoma, arial, sans-serif;
+}
+table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+h1 {
+    font-size: 42px;
+    font-weight: 400;
+    color: #400090;
+}
+p {
+    color: #1A1A1A;
+}
+#message-1 {
+    font-weight: bold;
+    margin: 0;
+}
+#message-2 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    max-width: 17em;
+    _width: 17em;
+}
+#spanishContent {
+    display: none;
+}
+    </style>
+<script>
+  document.write('<img src="//geo.yahoo.com/b?s=1197757129
+ERROR:flickrapi.auth.OAuthFlickrInterface:    t='+new Date().getTime()+'
+ERROR:flickrapi.auth.OAuthFlickrInterface:    err_url='+encodeURIComponent(document.URL)+'
+ERROR:flickrapi.auth.OAuthFlickrInterface:    err=504
+ERROR:flickrapi.auth.OAuthFlickrInterface:    test='+encodeURIComponent('-')+'" width="0px" height="0px"/>');
+</script>
+</head>
+<body>
+<!-- status code : 504 -->
+<!-- Inactivity Timeout -->
+<!-- host machine: r19.ycpi.sjb.yahoo.net -->
+<!-- timestamp: 1477942560.000 -->
+<!-- url: https://api.flickr.com/services/rest/?photo_id=11286980503
+ERROR:flickrapi.auth.OAuthFlickrInterface:    nojsoncallback=1
+ERROR:flickrapi.auth.OAuthFlickrInterface:    method=flickr.photos.removeTag
+ERROR:flickrapi.auth.OAuthFlickrInterface:    tag_id=12383156-11286980503-304423740
+ERROR:flickrapi.auth.OAuthFlickrInterface:    format=json-->
+<table>
+<tbody><tr>
+    <td>
+    <div id="englishContent">
+        <script type="text/javascript">
+        if (window.location.hostname=='att.yahoo.com'){
+            document.write('<img src="https://s1.yimg.com/rz/d/att_en-US_f_p_bestfit_2x.png" alt="AT
+ERROR:flickrapi.auth.OAuthFlickrInterface:    T">');
+        }else{
+            document.write('<img src="https://s.yimg.com/nn/img/yahoo-logo-201402200629.png" alt="Yahoo Logo">');
+        }    
+        </script> 
+        <h1 style="margin-top:20px;">Will be right back...</h1>
+        <p id="message-1">Thank you for your patience.</p>
+        <p id="message-2">Our engineers are working quickly to resolve the issue.</p>
+    </div>
+    <div id="spanishContent"> 
+        <img src="https://s1.yimg.com/rz/d/att_es-US_f_p_bestfit_2x.png" alt="AT
+ERROR:flickrapi.auth.OAuthFlickrInterface:    T En Vivo" style="max-width:310px">
+        <h1 style="margin-top:20px;">Volvemos enseguidaâ¦</h1>
+        <p id="message-1">Gracias por tu paciencia.</p>
+        <p id="message-2">Nuestros ingenieros estÃ¡n trabajando rÃ¡pidamente para resolver el problema.</p>
+    </div>
+    <script type="text/javascript">
+    if (window.location.hostname=='espanol.att.yahoo.com'){
+        document.getElementById('englishContent').style.display = 'none';
+        document.getElementById('spanishContent').style.display = 'block';
+    }   
+    </script>
+    </td>
+</tr>
+</tbody></table>
+
+
+</body></html>
+
+[I 19:36:42.280 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:38:43.691 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:38:49.993 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:40:42.239 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 19:42:58.291 NotebookApp] Kernel interrupted: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 19:44:41.618 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 04:19:28.677 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 04:21:01.844 NotebookApp] Copying upload_to_flickr.ipynb to 
+[I 04:21:05.380 NotebookApp] Kernel started: fa4d7e67-3d8b-4f7e-9c9e-2dcc6f8d1294
+[I 04:23:08.889 NotebookApp] Saving file at /upload_to_flickr-2.ipynb
+[W 04:23:17.959 NotebookApp] 404 GET /notebooks/upload_to_flickr-Copy1.ipynb (127.0.0.1): No such file or directory: upload_to_flickr-Copy1.ipynb
+[W 04:23:17.961 NotebookApp] 404 GET /notebooks/upload_to_flickr-Copy1.ipynb (127.0.0.1) 2.83ms referer=http://localhost:8081/tree
+[I 04:23:23.270 NotebookApp] Kernel shutdown: fa4d7e67-3d8b-4f7e-9c9e-2dcc6f8d1294
+[I 04:23:24.286 NotebookApp] Kernel shutdown: 29387284-22e6-4c0c-9582-873330fbab6a
+[I 04:24:18.272 NotebookApp] Kernel started: f665002e-0bc0-450b-a1dc-ae2fef09793b
+[I 04:24:35.981 NotebookApp] Kernel started: 17532fc6-cdca-40bd-bdb2-5ec16ecb8190
+[I 04:26:38.009 NotebookApp] Saving file at /upload_to_flickr-2.ipynb
+[I 04:26:53.766 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 04:28:37.491 NotebookApp] Saving file at /upload_to_flickr-2.ipynb
+[I 04:28:59.383 NotebookApp] Kernel interrupted: 17532fc6-cdca-40bd-bdb2-5ec16ecb8190
+[I 04:30:03.275 NotebookApp] Kernel shutdown: f0091ad6-5115-47b6-ae86-388b1075cdaa
+[I 04:30:03.778 NotebookApp] Kernel shutdown: f6b3f49f-a096-417b-aad4-20472798dbcb
+[I 04:30:27.785 NotebookApp] Copying upload_to_flickr.ipynb to 
+[I 04:30:31.746 NotebookApp] Kernel started: 0fce2a41-61ab-4dc1-aeb9-543a19f14c55
+[I 04:30:38.115 NotebookApp] Saving file at /upload_to_flickr-2.ipynb
+>>>>>>> ed0df3b7ab70ff991df4dacc5b6fc1ee3c269de7
