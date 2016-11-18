@@ -702,3 +702,421 @@ I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
 [I 06:24:12.249 NotebookApp] Saving file at /filter_final_tags.ipynb
 [I 06:26:12.251 NotebookApp] Saving file at /filter_final_tags.ipynb
 [I 06:27:26.831 NotebookApp] Saving file at /filter_final_tags.ipynb
+[C 05:35:21.072 NotebookApp] received signal 15, stopping
+[I 05:35:21.072 NotebookApp] Shutting down kernels
+[I 05:35:21.178 NotebookApp] Kernel shutdown: 6fcecf20-aef4-4ef5-8d23-b46d44602f69
+[I 05:35:21.179 NotebookApp] Kernel shutdown: 458857ed-6e17-47f9-81ab-7798d998ca1e
+[I 05:35:21.179 NotebookApp] Kernel shutdown: b9342033-8caa-467c-947c-94e007e673e2
+[I 02:32:52.242 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 02:32:52.243 NotebookApp] 0 active kernels 
+[I 02:32:52.243 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 02:32:52.244 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 02:32:55.768 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1): Kernel does not exist: 6fcecf20-aef4-4ef5-8d23-b46d44602f69
+[W 02:32:55.790 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1) 27.51ms referer=None
+[W 02:32:57.631 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1): Kernel does not exist: 6fcecf20-aef4-4ef5-8d23-b46d44602f69
+[W 02:32:57.632 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1) 4.46ms referer=None
+[W 02:32:58.939 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1): Kernel does not exist: 6fcecf20-aef4-4ef5-8d23-b46d44602f69
+[W 02:32:58.940 NotebookApp] 404 GET /api/kernels/6fcecf20-aef4-4ef5-8d23-b46d44602f69/channels?session_id=B9CDAB2D158A4901B0293C3593E3BB4B (127.0.0.1) 4.44ms referer=None
+[I 02:33:06.080 NotebookApp] Kernel started: 2eaf2042-8ce1-4394-85d8-146311863c04
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 02:35:06.417 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:37:06.255 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:39:06.401 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:43:06.170 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:45:06.171 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:47:06.387 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:57:07.289 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 02:59:06.181 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:01:06.374 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:11:06.250 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:13:06.166 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:15:06.380 NotebookApp] Saving file at /filter_final_tags.ipynb
+[W 03:17:06.436 NotebookApp] WebSocket ping timeout after 119872 ms.
+[I 03:18:40.720 NotebookApp] Kernel restarted: 2eaf2042-8ce1-4394-85d8-146311863c04
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 03:20:52.819 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:24:47.402 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:28:46.677 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:30:47.176 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:36:46.694 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:38:46.590 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:42:46.752 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:50:47.053 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:52:46.871 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:54:47.152 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:56:46.727 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 03:58:47.195 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:08:46.682 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:10:47.825 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:20:49.083 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:22:47.325 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:24:47.561 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:26:47.730 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:28:48.293 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:32:49.232 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:33:36.790 NotebookApp] Kernel interrupted: 2eaf2042-8ce1-4394-85d8-146311863c04
+[I 04:34:49.361 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:38:48.059 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:42:51.145 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:44:48.093 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:46:48.289 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:50:54.828 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:52:47.697 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:53:47.926 NotebookApp] Creating new notebook in 
+[I 04:53:49.320 NotebookApp] Kernel started: 8504e3a2-6ba9-405b-a574-c4fd146ddbe9
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 04:54:54.272 NotebookApp] Saving file at /filter_final_tags.ipynb
+[I 04:55:50.289 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 04:56:31.536 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 04:57:00.473 NotebookApp] Saving file at /filter_final_tags.ipynb
+[W 04:58:46.525 NotebookApp] WebSocket ping timeout after 105384 ms.
+[W 04:58:50.875 NotebookApp] WebSocket ping timeout after 109639 ms.
+[C 06:45:05.273 NotebookApp] received signal 15, stopping
+[I 06:45:05.274 NotebookApp] Shutting down kernels
+[I 06:45:05.378 NotebookApp] Kernel shutdown: 8504e3a2-6ba9-405b-a574-c4fd146ddbe9
+[I 06:45:05.379 NotebookApp] Kernel shutdown: 2eaf2042-8ce1-4394-85d8-146311863c04
+[I 14:36:01.815 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 14:36:02.173 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 14:36:02.174 NotebookApp] 0 active kernels 
+[I 14:36:02.174 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 14:36:02.174 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:36:05.668 NotebookApp] 302 GET / (127.0.0.1) 0.71ms
+[I 14:36:11.240 NotebookApp] Kernel started: 307b45e5-e971-4b3e-abf9-299e286f0c67
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 14:38:11.510 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[C 14:40:47.233 NotebookApp] received signal 15, stopping
+[I 14:40:47.234 NotebookApp] Shutting down kernels
+[I 14:40:47.337 NotebookApp] Kernel shutdown: 307b45e5-e971-4b3e-abf9-299e286f0c67
+[I 15:00:48.092 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 15:00:48.448 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 15:00:48.448 NotebookApp] 0 active kernels 
+[I 15:00:48.448 NotebookApp] The Jupyter Notebook is running at: http://localhost:7071/
+[I 15:00:48.448 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 15:00:53.986 NotebookApp] 302 GET / (127.0.0.1) 0.73ms
+[I 15:01:16.509 NotebookApp] Creating new notebook in 
+[I 15:01:17.985 NotebookApp] Kernel started: 487e4f20-36f2-4e30-885f-afca655cd94b
+[W 15:01:22.593 NotebookApp] File already exists: upload_to_flickr.ipynb
+[W 15:01:22.593 NotebookApp] 409 PATCH /api/contents/Untitled.ipynb (127.0.0.1) 3.99ms referer=http://localhost:8081/notebooks/Untitled.ipynb?kernel_name=python2
+[I 15:01:27.844 NotebookApp] Kernel started: a044c424-37e3-4da5-bd65-fc3091c57899
+[I 15:03:29.237 NotebookApp] Saving file at /upload_to_flickr.ipynb
+I tensorflow/stream_executor/dso_loader.cc:77] LD_LIBRARY_PATH: :/usr/local/cuda/lib64
+I tensorflow/stream_executor/cuda/cuda_dnn.cc:1062] Unable to load cuDNN DSO.
+[I 15:07:29.135 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 15:09:29.145 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 15:23:29.373 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[W 16:23:58.252 NotebookApp] WebSocket ping timeout after 119916 ms.
+[I 17:31:08.751 NotebookApp] Kernel started: a87bea9d-3c59-47b7-a8a3-091a3cad5977
+[I 17:31:26.022 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 17:31:26.110 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 17:33:08.979 NotebookApp] Saving file at /nearest_neighbor_ocr_tagging_all.ipynb
+[I 17:34:09.880 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 17:48:10.001 NotebookApp] Saving file at /upload_to_flickr.ipynb
+Yahoo
+
+  • Help
+
+Yahoo logo
+Sign in
+ 
+United States (+1) +1
+
+  • Afghanistan ‪(+93)‬
+  • Albania ‪(+355)‬
+  • Algeria ‪(+213)‬
+  • American Samoa ‪(+1)‬
+  • Andorra ‪(+376)‬
+  • Angola ‪(+244)‬
+  • Anguilla ‪(+1)‬
+  • Antarctica ‪(+672)‬
+  • Antigua, Barbuda ‪(+1268)‬
+  • Argentina ‪(+54)‬
+  • Armenia ‪(+374)‬
+  • Aruba ‪(+297)‬
+  • Ascension ‪(+247)‬
+  • Australia ‪(+61)‬
+  • Austria ‪(+43)‬
+  • Azerbaidijan ‪(+994)‬
+  • Bahamas ‪(+1)‬
+  • Bahrain ‪(+973)‬
+  • Bangladesh ‪(+880)‬
+  • Barbados ‪(+1)‬
+  • Belarus ‪(+375)‬
+  • Belgium ‪(+32)‬
+  • Belize ‪(+501)‬
+  • Benin ‪(+229)‬
+  • Bermuda ‪(+1441)‬
+  • Bhutan ‪(+975)‬
+  • Bolivia ‪(+591)‬
+  • Bosnia & Herzegovina ‪(+387)‬
+  • Botswana ‪(+267)‬
+  • Brazil ‪(+55)‬
+  • British Virgin Islands ‪(+1)‬
+  • Brunei Darussalam ‪(+673)‬
+  • Bulgaria ‪(+359)‬
+  • Burkina Faso ‪(+226)‬
+  • Burundi ‪(+257)‬
+  • Cambodia ‪(+855)‬
+  • Cameroon ‪(+237)‬
+  • Canada ‪(+1)‬
+  • Cape Verde ‪(+238)‬
+  • Cayman Islands ‪(+1345)‬
+  • Central African Republic ‪(+236)‬
+  • Chad ‪(+235)‬
+  • Chile ‪(+56)‬
+  • China ‪(+86)‬
+  • Colombia ‪(+57)‬
+  • Comoros ‪(+269)‬
+  • Cook Islands ‪(+682)‬
+  • Costa Rica ‪(+506)‬
+  • Croatia ‪(+385)‬
+  • Cyprus ‪(+357)‬
+  • Czech Republic ‪(+420)‬
+  • Denmark ‪(+45)‬
+  • Diego Garcia ‪(+246)‬
+  • Djibouti ‪(+253)‬
+  • Dominica ‪(+1)‬
+  • Dominican Republic ‪(+1)‬
+  • East Timor ‪(+670)‬
+  • Ecuador ‪(+593)‬
+  • Egypt ‪(+20)‬
+  • El Salvador ‪(+503)‬
+  • Equatorial Guinea ‪(+240)‬
+  • Eritrea ‪(+291)‬
+  • Estonia ‪(+372)‬
+  • Ethiopia ‪(+251)‬
+  • Falklands Islands ‪(+500)‬
+  • Faroe Islands ‪(+298)‬
+  • Fiji Islands ‪(+679)‬
+  • Finland ‪(+358)‬
+  • France ‪(+33)‬
+  • French Dept/Terr in Indian Ocean ‪(+262)‬
+  • French Guiana ‪(+594)‬
+  • French Polynesia ‪(+689)‬
+  • Gabon ‪(+241)‬
+  • Gambia ‪(+220)‬
+  • Georgia ‪(+995)‬
+  • Germany ‪(+49)‬
+  • Ghana ‪(+233)‬
+  • Gibraltar ‪(+350)‬
+  • Greece ‪(+30)‬
+  • Greenland ‪(+299)‬
+  • Grenada ‪(+1473)‬
+  • Guadeloupe ‪(+590)‬
+  • Guam ‪(+1)‬
+  • Guatemala ‪(+502)‬
+  • Guinea ‪(+224)‬
+  • Guinea-Bissau ‪(+245)‬
+  • Guyana ‪(+592)‬
+  • Haiti ‪(+509)‬
+  • Honduras ‪(+504)‬
+  • Hong Kong ‪(+852)‬
+  • Hungary ‪(+36)‬
+  • Iceland ‪(+354)‬
+  • India ‪(+91)‬
+  • Indonesia ‪(+62)‬
+  • Iraq ‪(+964)‬
+  • Ireland ‪(+353)‬
+  • Israel ‪(+972)‬
+  • Italy ‪(+39)‬
+  • Jamaica ‪(+1876)‬
+  • Japan ‪(+81)‬
+  • Jordan ‪(+962)‬
+  • Kenya ‪(+254)‬
+  • Kiribati ‪(+686)‬
+  • Kuwait ‪(+965)‬
+  • Kyrgyzstan ‪(+996)‬
+  • Lao ‪(+856)‬
+  • Latvia ‪(+371)‬
+  • Lebanon ‪(+961)‬
+  • Lesotho ‪(+266)‬
+  • Liberia ‪(+231)‬
+  • Liechtenstein ‪(+423)‬
+  • Lithuania ‪(+370)‬
+  • Luxembourg ‪(+352)‬
+  • Macao ‪(+853)‬
+  • Macedonia ‪(+389)‬
+  • Madagascar ‪(+261)‬
+  • Malawi ‪(+265)‬
+  • Malaysia ‪(+60)‬
+  • Maldives ‪(+960)‬
+  • Mali ‪(+223)‬
+  • Malta ‪(+356)‬
+  • Marshall Islands ‪(+692)‬
+  • Martinique ‪(+596)‬
+  • Mauritania ‪(+222)‬
+  • Mauritius ‪(+230)‬
+  • Mexico ‪(+52)‬
+  • Micronesia ‪(+691)‬
+  • Moldova ‪(+373)‬
+  • Monaco ‪(+377)‬
+  • Mongolia ‪(+976)‬
+  • Montenegro ‪(+382)‬
+  • Montserrat ‪(+1664)‬
+  • Morocco ‪(+212)‬
+  • Mozambique ‪(+258)‬
+  • Namibia ‪(+264)‬
+  • Nauru ‪(+674)‬
+  • Nepal ‪(+977)‬
+  • Netherlands ‪(+31)‬
+  • Netherlands Antilles ‪(+599)‬
+  • New Caledonia ‪(+687)‬
+  • New Zealand ‪(+64)‬
+  • Nicaragua ‪(+505)‬
+  • Niger ‪(+227)‬
+  • Nigeria ‪(+234)‬
+  • Niue ‪(+683)‬
+  • Northern Mariana Islands ‪(+1)‬
+  • Norway ‪(+47)‬
+  • Oman ‪(+968)‬
+  • Pakistan ‪(+92)‬
+  • Palau ‪(+680)‬
+  • Panama ‪(+507)‬
+  • Papua New Guinea ‪(+675)‬
+  • Paraguay ‪(+595)‬
+  • Peru ‪(+51)‬
+  • Philippines ‪(+63)‬
+  • Poland ‪(+48)‬
+  • Portugal ‪(+351)‬
+  • Puerto-Rico ‪(+1)‬
+  • Qatar ‪(+974)‬
+  • Reunion ‪(+262)‬
+  • Romania ‪(+40)‬
+  • Russia ‪(+7)‬
+  • Rwanda ‪(+250)‬
+  • Saint Helena ‪(+290)‬
+  • Saint Kitts and Nevis ‪(+1)‬
+  • Saint Lucia ‪(+1758)‬
+  • Saint Pierre and Miquelon ‪(+508)‬
+  • Saint Vincent and the Grenadines ‪(+1)‬
+  • Samoa ‪(+685)‬
+  • San Marino ‪(+378)‬
+  • Sao Tome and Principe ‪(+239)‬
+  • Saudi Arabia ‪(+966)‬
+  • Senegal ‪(+221)‬
+  • Serbia ‪(+381)‬
+  • Seychelles ‪(+248)‬
+  • Sierra Leone ‪(+232)‬
+  • Singapore ‪(+65)‬
+  • Slovakia ‪(+421)‬
+  • Slovenia ‪(+386)‬
+  • Solomon Islands ‪(+677)‬
+  • South Africa ‪(+27)‬
+  • South Korea ‪(+82)‬
+  • Spain ‪(+34)‬
+  • Sri Lanka ‪(+94)‬
+  • Suriname ‪(+597)‬
+  • Swaziland ‪(+268)‬
+  • Sweden ‪(+46)‬
+  • Switzerland ‪(+41)‬
+  • Taiwan ‪(+886)‬
+  • Tajikistan ‪(+992)‬
+  • Tanzania ‪(+255)‬
+  • Thailand ‪(+66)‬
+  • Togo ‪(+228)‬
+  • Tokelau ‪(+690)‬
+  • Tonga ‪(+676)‬
+  • Trinidad, Tobago ‪(+1868)‬
+  • Tunisia ‪(+216)‬
+  • Turkey ‪(+90)‬
+  • Turkmenistan ‪(+993)‬
+  • Turks and Caicos ‪(+1649)‬
+  • Tuvalu ‪(+688)‬
+  • US Virgin Islands ‪(+1)‬
+  • Uganda ‪(+256)‬
+  • Ukraine ‪(+380)‬
+  • United Arab Emirates ‪(+971)‬
+  • United Kingdom ‪(+44)‬
+  • United States ‪(+1)‬
+  • Uruguay ‪(+598)‬
+  • Uzbekistan ‪(+998)‬
+  • Vanuatu ‪(+678)‬
+  • Vatican City State ‪(+39)‬
+  • Venezuela ‪(+58)‬
+  • Vietnam ‪(+84)‬
+  • Wallis and Futuna ‪(+681)‬
+  • Yemen ‪(+967)‬
+  • Zambia ‪(+260)‬
+  • Zimbabwe ‪(+263)‬
+
+Country menu
+[United States ‪(+1)‬                     ]
+Username [                    ]
+Password [                    ]
+Click continue to sign in.
+Next
+[*] Stay signed in
+Trouble signing in?
+Visit Yahoo Help
+Yahoo Japan users - please visit Yahoo Help to learn how to add your email
+address.
+
+Account security issue
+
+More information about the account security issue.
+
+Our notice to potentially affected users.
+
+Don't have an account? Sign up
+
+Yahoo makes it easy to enjoy what matters most in your world.
+
+Best in class Yahoo Mail, breaking local, national and global news, finance,
+sports, music, movies and more. You get more out of the web, you get more out
+of life.
+
+View desktop version
+Terms | Privacy
+[p]
+[I 17:50:00.504 NotebookApp] Kernel interrupted: a044c424-37e3-4da5-bd65-fc3091c57899
+[I 17:50:09.901 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 401 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=verifier_invalid
+[I 17:52:09.926 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 401 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=verifier_invalid
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 401 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=verifier_invalid
+[I 17:54:10.030 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 17:56:09.909 NotebookApp] Saving file at /upload_to_flickr.ipynb
+ERROR:flickrapi.auth.OAuthFlickrInterface:do_request: Status code 401 received, content:
+ERROR:flickrapi.auth.OAuthFlickrInterface:    oauth_problem=token_used
+[I 17:58:09.969 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:00:09.930 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:02:10.041 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:04:10.032 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:06:09.960 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:20:09.997 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:22:10.080 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:28:10.108 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:30:12.605 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:32:10.079 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:34:10.062 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:36:10.049 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:38:10.054 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:40:10.102 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:43:20.504 NotebookApp] Kernel interrupted: a044c424-37e3-4da5-bd65-fc3091c57899
+[I 18:44:10.071 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:46:10.107 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:50:38.714 NotebookApp] Kernel interrupted: a044c424-37e3-4da5-bd65-fc3091c57899
+[I 18:52:10.126 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[I 18:54:10.107 NotebookApp] Saving file at /upload_to_flickr.ipynb
+[C 22:47:42.697 NotebookApp] received signal 15, stopping
+[I 22:47:42.698 NotebookApp] Shutting down kernels
+[I 22:47:42.802 NotebookApp] Kernel shutdown: a87bea9d-3c59-47b7-a8a3-091a3cad5977
+[I 22:47:42.802 NotebookApp] Kernel shutdown: 487e4f20-36f2-4e30-885f-afca655cd94b
+[I 22:47:42.803 NotebookApp] Kernel shutdown: a044c424-37e3-4da5-bd65-fc3091c57899
+[I 06:03:32.795 NotebookApp] The port 7070 is already in use, trying another random port.
+[I 06:03:32.799 NotebookApp] The port 7071 is already in use, trying another random port.
+[I 06:03:32.799 NotebookApp] The port 7072 is already in use, trying another random port.
+[I 06:03:32.799 NotebookApp] The port 7073 is already in use, trying another random port.
+[I 06:03:32.799 NotebookApp] The port 7074 is already in use, trying another random port.
+[I 06:03:32.808 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/scripts
+[I 06:03:32.808 NotebookApp] 0 active kernels 
+[I 06:03:32.808 NotebookApp] The Jupyter Notebook is running at: http://localhost:7163/
+[I 06:03:32.808 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 23:51:29.255 NotebookApp] received signal 15, stopping
+[I 23:51:29.266 NotebookApp] Shutting down kernels

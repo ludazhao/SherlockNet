@@ -1,0 +1,8 @@
+[I 15:26:36.057 NotebookApp] The port 7070 is already in use, trying another random port.
+[I 15:26:36.057 NotebookApp] The port 7071 is already in use, trying another random port.
+[I 15:26:36.064 NotebookApp] Serving notebooks from local directory: /home/ubuntu/ArtHistoryNet/captioning
+[I 15:26:36.064 NotebookApp] 0 active kernels 
+[I 15:26:36.064 NotebookApp] The Jupyter Notebook is running at: http://localhost:7072/
+[I 15:26:36.064 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 23:51:29.261 NotebookApp] received signal 15, stopping
+[I 23:51:29.285 NotebookApp] Shutting down kernels
