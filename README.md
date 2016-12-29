@@ -25,8 +25,9 @@ Disclaimer: This code is research quality only and should be treated as such.
 ## Key pieces of code
 
 #### 1. Data Preprocessing
-* [scripts/preprocess.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/preprocess_all.py): This makes all images 256x256 and grayscale. It scales all images such that the 'smaller' dimension is 256 pixels, then crops the image to a square.
-* [scripts/augment_data.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/augment_data.py) and [scripts/image_util.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/image_util.py): This augments our training set with rotations, crops, and other transformations to increase robustness.
+
+* [preprocess.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/preprocess_all.py): This makes all images 256x256 and grayscale. It scales all images such that the 'smaller' dimension is 256 pixels, then crops the image to a square.
+* [augment_data.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/augment_data.py) and [image_util.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/image_util.py): This augments our training set with rotations, crops, and other transformations to increase robustness.
 
 #### 2. Training and Tagging
 
@@ -44,7 +45,7 @@ Disclaimer: This code is research quality only and should be treated as such.
 * [analyze_decorations_by_decade.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/analyze_decorations_by_decade.ipynb): Similar analysis but with decorations.
 * [retrain_decades.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts_decadesnet/retrain_decades.py): Script used by the above 2 analyses to retrain model to categorize images into eras.
 
-#### 4. Obtaining text around each image, and generating tags using a nearest neighbor voting process.
+#### 4. Obtaining text around each image, and generating tags using a nearest neighbor voting process
 
 * [get_json_text.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/get_json_text.py): Save the text from the 3 pages around each image.
 * [extract_noun_phrases.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/extract_noun_phrases.py): For each image, extract all noun phrases from its surrounding OCR text..
@@ -53,7 +54,7 @@ Disclaimer: This code is research quality only and should be treated as such.
 * [get_final_tags.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/get_final_tags.py): For each image, have the 20 most similar images vote on the 20 words that appear most often in all of the images. Before this voting process, the script also performs spell check and stemming on the words.
 * [filter_final_tags.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/filter_final_tags.ipynb): For each image, make sure its tags are all correctly spelled, and take out stopwords.
 
-#### 5. Upload tags to Flickr.
+#### 5. Uploading tags to Flickr
 
 * [image_name_to_url.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/image_name_to_url.ipynb): From the British Library documentation, find the flickr ID for each image.
 * [upload_to_flickr.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/upload_to_flickr.ipynb): Add tags to the Flickr page for each image with a "sherlocknet:" prefix.
