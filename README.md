@@ -58,15 +58,15 @@ Disclaimer: This code is research quality only and should be treated as such.
 
 Note: This part leverages the open-source package [neuraltalk2](https://github.com/karpathy/neuraltalk2) for training and evaluating iamge captions, with slight modifications. Our generous thanks to its author, Andrej Karpathy.
 
-* [prepro.py]() Converts a json files of captions to images into an form easily feed-able into Torch.
-* [train.lua]() training script. For the list of hyperparameters, see the top of the file. 
-* [eval.lua, ]() run the evaluation script to generate captions in the /vis folder. See [eval_10k.sh]() for an example of usage details.
+* [prepro.py](https://github.com/ludazhao/SherlockNet/blob/master/captioning/neuraltalk2/prepro.py) Converts a json files of captions to images into an form easily feed-able into Torch.
+* [train.lua](https://github.com/ludazhao/SherlockNet/blob/master/captioning/neuraltalk2/train.lua) training script. For the list of hyperparameters, see the top of the file. 
+* [eval.lua](https://github.com/ludazhao/SherlockNet/blob/master/captioning/neuraltalk2/eval.lua) run the evaluation script to generate captions in the [/vis](https://github.com/ludazhao/SherlockNet/tree/master/captioning/neuraltalk2/vis/vis_json) folder. See [eval_10k.sh](https://github.com/ludazhao/SherlockNet/blob/master/captioning/neuraltalk2/eval_10k.sh) for an example of usage details.
 
 For more usage details, please also consult the documentation of [neuraltalk2](https://github.com/karpathy/neuraltalk2). 
 
 #### 6. Preprocessing, training, tagging & captioning experiments for the British Museum Prints and Drawings(BM) dataset
 
-* The notebooks are named in order. Please consult in-line headers for more details on each notebook. 
+* All of the code related to preprocessing, training, tagging, and captioning using the British Museum Prints and Drawings dataset is contained in [/captionings/bm_prints_drawings](https://github.com/ludazhao/SherlockNet/tree/master/captioning/bm_prints_drawings) folder. Within, the notebooks are named in order. Please consult in-line headers for more details on each notebook. 
 
 #### 7. Uploading tags, captions to Flickr
 
