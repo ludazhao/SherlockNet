@@ -1,15 +1,10 @@
-<<<<<<< Updated upstream
 # SherlockNet
 ### Using Convolutional Neural Networks to Explore Over 400 Years of Book Illustrations
-=======
-# Sherlock
->>>>>>> Stashed changes
 
 ![Alt text](http://britishlibrary.typepad.co.uk/.a/6a00d8341c464853ef01a3fceb004b970b-500wi)
 
 Starting from February 2016, as part of the [British Library Labs Competition](http://labs.bl.uk/British+Library+Labs+Competition), we embarked on a collaboration with the British Library Labs and the British Museum to tag and caption the entire British Library 1M Collection, a set of 1 million book illustrations scanned from books published between 1500 and 1900. We proposed to use convolutional neural networks (CNNs) to perform this automatic tagging and captioning. In addition, we proposed deeper analysis of temporal trends in these images using the explanatory power provided by neural networks. Below we provide our deliverables as well as short explanations of the iPython notebooks we wrote for our project. 
 
-<<<<<<< Updated upstream
 Our tags and captions can be found at our web portal [here](bit.ly/sherlocknet). We have also uploaded all our tags to Flickr [here](https://www.flickr.com/photos/britishlibrary/).
 
 Disclaimer: This code is research quality only and should be treated as such. 
@@ -80,33 +75,3 @@ For more usage details, please also consult the documentation of [neuraltalk2](h
 
 ## Data
 We will publish our data, both in its raw form and its processed form, at a separate portal. Details coming soon!
-=======
-## Introduction
-[FILL IN]
-
-## SherlockNet Interface
-
-
-
-## Data
-We will publish our data, both in its raw form and its processed form, at a separate portal. Details coming soon!
-
-
-## Code
-Note: 
-Lots of code here is written as research code and will probably not work out of the box. Happy to answer questions if you want to follow along what we did , try something similiar, or extend our work!
-
-### Tagging
-
-### Captioning
-
-Found under /captioning. The codebase extensively uses neuraltalk2, the fantastic codebase for image captioning.
-
-All of our work using the British Museum Prints and Drawing collection is under /captioning/bm_prints_drawings.
-
-
-## BL Competition
-
-
-## Useful Links
->>>>>>> Stashed changes
