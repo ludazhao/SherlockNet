@@ -3,7 +3,7 @@
 
 ![Alt text](http://britishlibrary.typepad.co.uk/.a/6a00d8341c464853ef01a3fceb004b970b-500wi)
 
-In February 2016, we embarked on a collaboration with the British Library Labs and the British Museum to tag and caption the entire British Library 1M Collection, a set of 1 million book illustrations scanned from books published between 1500 and 1900. We proposed to use convolutional neural networks (CNNs) to perform this automatic tagging and captioning. In addition, we proposed deeper analysis of temporal trends in these images using the explanatory power provided by neural networks. Below we provide our deliverables as well as short explanations of the iPython notebooks we wrote for our project. 
+Starting from February 2016, as part of the [British Library Labs Competition](http://labs.bl.uk/British+Library+Labs+Competition), we embarked on a collaboration with the British Library Labs and the British Museum to tag and caption the entire British Library 1M Collection, a set of 1 million book illustrations scanned from books published between 1500 and 1900. We proposed to use convolutional neural networks (CNNs) to perform this automatic tagging and captioning. In addition, we proposed deeper analysis of temporal trends in these images using the explanatory power provided by neural networks. Below we provide our deliverables as well as short explanations of the iPython notebooks we wrote for our project. 
 
 Our tags and captions can be found at our web portal [here](bit.ly/sherlocknet). We have also uploaded all our tags to Flickr [here](https://www.flickr.com/photos/britishlibrary/).
 
@@ -54,7 +54,24 @@ Disclaimer: This code is research quality only and should be treated as such.
 * [get_final_tags.py](https://github.com/ludazhao/SherlockNet/blob/master/scripts/get_final_tags.py): For each image, have the 20 most similar images vote on the 20 words that appear most often in all of the images. Before this voting process, the script also performs spell check and stemming on the words.
 * [filter_final_tags.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/filter_final_tags.ipynb): For each image, make sure its tags are all correctly spelled, and take out stopwords.
 
-#### 5. Uploading tags to Flickr
+#### 5. training and generating captions
+
+Note: This part leverages the open-source package [neuraltalk2](https://github.com/karpathy/neuraltalk2) for training and evaluating iamge captions, with slight modifications. Our generous thanks to its author, Andrej Karpathy.
+
+* [prepro.py]() Converts a json files of captions to images into an form easily feed-able into Torch.
+* [train.lua]() training script. For the list of hyperparameters, see the top of the file. 
+* [eval.lua, ]() run the evaluation script to generate captions in the /vis folder. See [eval_10k.sh]() for an example of usage details.
+
+For more usage details, please also consult the documentation of [neuraltalk2](https://github.com/karpathy/neuraltalk2). 
+
+#### 6. Preprocessing, training, tagging & captioning experiments for the British Museum Prints and Drawings(BM) dataset
+
+* The notebooks are named in order. Please consult in-line headers for more details on each notebook. 
+
+#### 7. Uploading tags, captions to Flickr
 
 * [image_name_to_url.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/image_name_to_url.ipynb): From the British Library documentation, find the flickr ID for each image.
 * [upload_to_flickr.ipynb](https://github.com/ludazhao/SherlockNet/blob/master/scripts/upload_to_flickr.ipynb): Add tags to the Flickr page for each image with a "sherlocknet:" prefix.
+
+## Data
+We will publish our data, both in its raw form and its processed form, at a separate portal. Details coming soon!
