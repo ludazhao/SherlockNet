@@ -5,7 +5,7 @@
 
 Starting from February 2016, as part of the [British Library Labs Competition](http://labs.bl.uk/British+Library+Labs+Competition), we embarked on a collaboration with the British Library Labs and the British Museum to tag and caption the entire British Library 1M Collection, a set of 1 million book illustrations scanned from books published between 1500 and 1900. We proposed to use convolutional neural networks (CNNs) to perform this automatic tagging and captioning. In addition, we proposed deeper analysis of temporal trends in these images using the explanatory power provided by neural networks. Below we provide our deliverables as well as short explanations of the iPython notebooks we wrote for our project. 
 
-Our tags and captions can be found at our web portal [here](bit.ly/sherlocknet). We have also uploaded all our tags to Flickr [here](https://www.flickr.com/photos/britishlibrary/).
+Our tags and captions can be found at our web portal [here](http://bit.ly/sherlocknet). We have also uploaded all our tags to Flickr [here](https://www.flickr.com/photos/britishlibrary/).
 
 Disclaimer: This code is research quality only and should be treated as such. 
 
